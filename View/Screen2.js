@@ -6,6 +6,7 @@ const Screen2 = () => {
     <View>
       <Text>Screen2</Text>
       <Text>VanPhu</Text>
+      {/* helo */}
     </View>
   )
 }
