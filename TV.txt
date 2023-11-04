@@ -1,0 +1,8 @@
+// BottomTab
+npm install @react-navigation/bottom-tabs
+// Icon
+npm install react-native-vector-icons
+// Material Top Tabs
+npm install @react-navigation/material-top-tabs react-native-tab-view
+// Video
+npm install react-native-video
