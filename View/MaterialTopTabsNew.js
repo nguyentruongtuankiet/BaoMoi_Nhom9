@@ -4,7 +4,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import Icon from "react-native-vector-icons/FontAwesome"; //
 import Screen3 from "../screens/Screen3";
+import { TouchableOpacity } from "react-native-web";
 
+import screentimkiem from "../screens/Search"
 const MaterialTopTabs = createMaterialTopTabNavigator();
 
 export const MaterialTopTabsScreenNews = () => (
@@ -96,11 +98,16 @@ export const MaterialTopTabsScreenNews = () => (
       />
       <MaterialTopTabs.Screen
         name="Tab7"
-        component={Screen3}
+        component={screentimkiem}
         options={{
           tabBarShowLabel: false,
           tabBarIcon: ({ color, size }) => (
-            <Icon name="search" color={color} size={19} />
+            <TouchableOpacity
+              
+            >
+              <Icon name="search" color={color} size={19} />
+            </TouchableOpacity>
+            
           ),
         }}
       />
