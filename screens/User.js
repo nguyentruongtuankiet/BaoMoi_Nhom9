@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Image } from "expo-image";
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, TouchableOpacity } from "react-native";
 // import { Color, FontFamily, FontSize } from "..fonts/GlobalStyles";
 
-const User = () => {
+const User = ({navigation}) => {
   return (
     <View style={[styles.user, styles.userLayout]}>
       <Image
@@ -97,8 +97,15 @@ const User = () => {
         contentFit="cover"
         source={require("../images/trangchu/calendar.png")}
       />
+      <TouchableOpacity onPress={() => {
+        navigation.navigate("tienich");
+      }}>
       <Text style={[styles.lchVit, styles.titTypo]}>Lịch Việt</Text>
-      <Pressable style={[styles.thiTit, styles.titPosition]} onPress={() => {}}>
+      </TouchableOpacity>
+     
+      <Pressable style={[styles.thiTit, styles.titPosition]} onPress={() => {
+        navigation.navigate("screenweather");
+      }}>
         <Text style={[styles.thiTit1, styles.titTypo]}>Thời tiết</Text>
       </Pressable>
       <Text style={[styles.titKim3g4g, styles.titTypo]}>

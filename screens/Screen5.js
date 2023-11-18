@@ -59,197 +59,203 @@ export default function Screen5() {
   const [showAll, setShowAll] = useState(false);
   const initialItemsToShow = 3;
   const itemsToShow = showAll ? dataDanguocQuanTam.length : initialItemsToShow;
-   const [showAll1, setShowAll1] = useState(false);
+  const [showAll1, setShowAll1] = useState(false);
   const initialItemsToShow1 = 3;
   const itemsToShow1 = showAll1 ? dataNong24h.length : initialItemsToShow1;
 
- 
   return (
     <View style={styles.container}>
-    <ScrollView nestedScrollEnabled>  <View
-        style={{
-          height: 20,
-          width: 350,
-          flexDirection: "row",
-          alignItems: "center",
-          marginTop: 5,
-        }}
-      >
-        <Image
-          source={require("../images/trend.png")}
-          style={{ height: 18, width: 18, marginRight: 10, marginLeft: 10 }}
-        />
-        <Text
-          style={{
-            color: "#26ACAF",
-            fontFamily: "Inter",
-            fontSize: 10,
-            fontStyle: "normal",
-            fontWeight: 500,
-          }}
-        >
-          ĐANG ĐƯỢC QUAN TÂM
-        </Text>
-      </View>
-      <View style={{ alignItems: "center", marginBottom: 30 }}>
+        <View style = {{flex: 1, backgroundImage: "linear-gradient(to right, #5eb4ba, #155380)", alignItems: "center"}}>
+        <Text style = {styles.fontVideo}>Xu hướng</Text>
+    </View>
+        <View style = {styles.listvideo}>
         <ScrollView nestedScrollEnabled>
-          <FlatList
-            data={dataDanguocQuanTam.slice(0, itemsToShow)}
-            keyExtractor={(item) => item.id}
-            renderItem={({ item }) => (
-              <TouchableOpacity>
-                <View
-                  style={{
-                    height: 105,
-                    width: 350,
-                    backgroundColor: "#FFF",
-                    flexDirection: "row",
-                    marginTop: 5,
-                  }}
-                >
-                  <Image
-                    style={{ height: 90, width: 160, borderRadius: 9 }}
-                    source={{ uri: item.link }}
-                  />
-                  <View
-                    style={{
-                      height: 90,
-                      width: 160,
-                      marginLeft: 15,
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <Text
-                      style={{
-                        color: "#000",
-                        fontFamily: "Inter",
-                        fontSize: 13,
-                        fontStyle: "normal",
-                        fontWeight: 550,
-                      }}
-                    >
-                      {item.name}
-                    </Text>
-                    <Image
-                      style={{ height: 15, width: 30 }}
-                      source={require("../images/Zinglogo.png")}
-                    />
-                  </View>
-                </View>
-              </TouchableOpacity>
-            )}
-          />
-          <TouchableOpacity onPress={() => setShowAll(!showAll)}>
+          {" "}
+          <View
+            style={{
+              height: 20,
+              width: 350,
+              flexDirection: "row",
+              alignItems: "center",
+              marginTop: 5,
+            }}
+          >
+            <Image
+              source={require("../images/trend.png")}
+              style={{ height: 18, width: 18, marginRight: 10, marginLeft: 10 }}
+            />
             <Text
               style={{
-                color: "#767474",
-                textAlign: "center",
+                color: "#26ACAF",
                 fontFamily: "Inter",
-                fontSize: 14,
+                fontSize: 10,
                 fontStyle: "normal",
                 fontWeight: 500,
-                marginTop: 7,
               }}
             >
-              {showAll ? "Thu gọn ↑" : "Đọc thêm ↓"}
+              ĐANG ĐƯỢC QUAN TÂM
             </Text>
-          </TouchableOpacity>
-        </ScrollView>
-      </View>
-      <View
-        style={{ height: 1, width: "100%", backgroundColor: "#EEECEC" }}
-      ></View>
-      <View
-        style={{
-          height: 20,
-          width: 350,
-          flexDirection: "row",
-          alignItems: "center",
-          marginTop: 5,
-        }}
-      >
-        <Image
-          source={require("../images/trend.png")}
-          style={{ height: 18, width: 18, marginRight: 10, marginLeft: 10 }}
-        />
-        <Text
-          style={{
-            color: "#26ACAF",
-            fontFamily: "Inter",
-            fontSize: 10,
-            fontStyle: "normal",
-            fontWeight: 500,
-          }}
-        >
-          Nóng 24H
-        </Text>
-      </View>
-      <View style={{ alignItems: "center", marginBottom: 30 }}>
-        <ScrollView nestedScrollEnabled>
-          <FlatList
-            data={dataNong24h.slice(0, itemsToShow1)}
-            keyExtractor={(item) => item.id}
-            renderItem={({ item }) => (
-              <TouchableOpacity>
-                <View
-                  style={{
-                    height: 105,
-                    width: 350,
-                    backgroundColor: "#FFF",
-                    flexDirection: "row",
-                    marginTop: 5,
-                  }}
-                >
-                  <Image
-                    style={{ height: 90, width: 160, borderRadius: 9 }}
-                    source={{ uri: item.link }}
-                  />
-                  <View
-                    style={{
-                      height: 90,
-                      width: 160,
-                      marginLeft: 15,
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <Text
+          </View>
+          <View style={{ alignItems: "center", marginBottom: 30 }}>
+            <ScrollView nestedScrollEnabled>
+              <FlatList
+                data={dataDanguocQuanTam.slice(0, itemsToShow)}
+                keyExtractor={(item) => item.id}
+                renderItem={({ item }) => (
+                  <TouchableOpacity>
+                    <View
                       style={{
-                        color: "#000",
-                        fontFamily: "Inter",
-                        fontSize: 13,
-                        fontStyle: "normal",
-                        fontWeight: 550,
+                        height: 105,
+                        width: 350,
+                        backgroundColor: "#FFF",
+                        flexDirection: "row",
+                        marginTop: 5,
                       }}
                     >
-                      {item.name}
-                    </Text>
-                    <Image
-                      style={{ height: 15, width: 30 }}
-                      source={require("../images/Zinglogo.png")}
-                    />
-                  </View>
-                </View>
+                      <Image
+                        style={{ height: 90, width: 160, borderRadius: 9 }}
+                        source={{ uri: item.link }}
+                      />
+                      <View
+                        style={{
+                          height: 90,
+                          width: 160,
+                          marginLeft: 15,
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <Text
+                          style={{
+                            color: "#000",
+                            fontFamily: "Inter",
+                            fontSize: 13,
+                            fontStyle: "normal",
+                            fontWeight: 550,
+                          }}
+                        >
+                          {item.name}
+                        </Text>
+                        <Image
+                          style={{ height: 15, width: 30 }}
+                          source={require("../images/Zinglogo.png")}
+                        />
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                )}
+              />
+              <TouchableOpacity onPress={() => setShowAll(!showAll)}>
+                <Text
+                  style={{
+                    color: "#767474",
+                    textAlign: "center",
+                    fontFamily: "Inter",
+                    fontSize: 14,
+                    fontStyle: "normal",
+                    fontWeight: 500,
+                    marginTop: 7,
+                  }}
+                >
+                  {showAll ? "Thu gọn ↑" : "Đọc thêm ↓"}
+                </Text>
               </TouchableOpacity>
-            )}
-          />
-          <TouchableOpacity onPress={() => setShowAll1(!showAll1)}>
+            </ScrollView>
+          </View>
+          <View
+            style={{ height: 1, width: "100%", backgroundColor: "#EEECEC" }}
+          ></View>
+          <View
+            style={{
+              height: 20,
+              width: 350,
+              flexDirection: "row",
+              alignItems: "center",
+              marginTop: 5,
+            }}
+          >
+            <Image
+              source={require("../images/trend.png")}
+              style={{ height: 18, width: 18, marginRight: 10, marginLeft: 10 }}
+            />
             <Text
               style={{
-                color: "#767474",
-                textAlign: "center",
+                color: "#26ACAF",
                 fontFamily: "Inter",
-                fontSize: 14,
+                fontSize: 10,
                 fontStyle: "normal",
                 fontWeight: 500,
-                marginTop: 7,
               }}
             >
-              {showAll1 ? "Thu gọn ↑" : "Đọc thêm ↓"}
+              Nóng 24H
             </Text>
-          </TouchableOpacity>
+          </View>
+          <View style={{ alignItems: "center", marginBottom: 30 }}>
+            <ScrollView nestedScrollEnabled>
+              <FlatList
+                data={dataNong24h.slice(0, itemsToShow1)}
+                keyExtractor={(item) => item.id}
+                renderItem={({ item }) => (
+                  <TouchableOpacity>
+                    <View
+                      style={{
+                        height: 105,
+                        width: 350,
+                        backgroundColor: "#FFF",
+                        flexDirection: "row",
+                        marginTop: 5,
+                      }}
+                    >
+                      <Image
+                        style={{ height: 90, width: 160, borderRadius: 9 }}
+                        source={{ uri: item.link }}
+                      />
+                      <View
+                        style={{
+                          height: 90,
+                          width: 160,
+                          marginLeft: 15,
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <Text
+                          style={{
+                            color: "#000",
+                            fontFamily: "Inter",
+                            fontSize: 13,
+                            fontStyle: "normal",
+                            fontWeight: 550,
+                          }}
+                        >
+                          {item.name}
+                        </Text>
+                        <Image
+                          style={{ height: 15, width: 30 }}
+                          source={require("../images/Zinglogo.png")}
+                        />
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                )}
+              />
+              <TouchableOpacity onPress={() => setShowAll1(!showAll1)}>
+                <Text
+                  style={{
+                    color: "#767474",
+                    textAlign: "center",
+                    fontFamily: "Inter",
+                    fontSize: 14,
+                    fontStyle: "normal",
+                    fontWeight: 500,
+                    marginTop: 7,
+                  }}
+                >
+                  {showAll1 ? "Thu gọn ↑" : "Đọc thêm ↓"}
+                </Text>
+              </TouchableOpacity>
+            </ScrollView>
+          </View>
         </ScrollView>
-      </View></ScrollView>
-    
+      </View>
     </View>
   );
 }
@@ -257,8 +263,17 @@ export default function Screen5() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "flex-start",
-    alignItems: "center",
-    backgroundColor: "#FFF",
   },
+  listvideo:{
+    flex: 9,
+    alignItems: "center",
+
+  },
+  fontVideo:{
+    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#fff",
+    marginTop:15
+  }
 });
