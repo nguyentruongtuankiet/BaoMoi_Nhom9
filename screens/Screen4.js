@@ -5,9 +5,10 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  ScrollView,
+  FlatList
 } from "react-native";
 import React from "react";
-import { FlatList } from "react-native";
 
 const data = [
   {
@@ -23,6 +24,14 @@ const data = [
 export default function Screen4() {
   return (
     <View style={styles.container}>
+    <View style = {{flex: 1, backgroundImage: "linear-gradient(to right, #5eb4ba, #155380)", alignItems: "center"}}>
+        <Text style = {styles.fontVideo}>Video</Text>
+    </View>
+    <View style = {styles.listvideo}>
+
+    <ScrollView
+      nestedScrollEnabled={true}
+    >
       <FlatList
         data={data}
         keyExtractor={(item) => item.id}
@@ -41,16 +50,29 @@ export default function Screen4() {
           </View>
         )}
       />
+    </ScrollView>
+    </View>
+   
+      
     </View>
   );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor:"#FFF"
   },
+  listvideo:{
+    flex: 9,
+    alignItems: "center",
+
+  },
+  fontVideo:{
+    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#fff",
+    marginTop:15
+  }
 });
 
 {
