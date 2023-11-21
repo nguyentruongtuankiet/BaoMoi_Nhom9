@@ -11,6 +11,7 @@ import Screen2 from "./screens/Screen2";
 // import Screen5 from "./screens/Screen5";
 // import screenweather from "./screens/ScreenWeather.js";
 import screentrangchu from "./screens/User"
+import screen3cham from "./screens/BaCham"
 
 import { TabScreen } from "./View/ViewBottomTab.js"
 
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Screen1">
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Screen1"
           component={Screen1}
           options={{ headerShown: false }}
@@ -30,22 +31,28 @@ export default function App() {
           name="screen2"
           component={Screen2}
           options={{ headerShown: false }}
-        /> */}
-        {/* <Stack.Screen
+        />
+        <Stack.Screen
           name="screen3"
           component={TabScreen}
           options={{ headerShown: false }}
-        /> */}
+        />
              {/* <Stack.Screen
           name="screenweather"
           component={screenweather}
           options={{ headerShown: false }}
         /> */}
-                   <Stack.Screen
+                   {/* <Stack.Screen
           name="screentrangchu"
           component={screentrangchu}
           options={{ headerShown: false }}
-        />
+        /> */}
+
+                  {/* <Stack.Screen
+          name="screen3cham"
+          component={screen3cham}
+          options={{ headerShown: false }}
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

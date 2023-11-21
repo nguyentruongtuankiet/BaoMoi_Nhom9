@@ -8,7 +8,7 @@ import { TouchableOpacity } from "react-native-web";
 
 import screentimkiem from "../screens/Search"
 const MaterialTopTabs = createMaterialTopTabNavigator();
-
+import screen3cham from "../screens/BaCham"
 export const MaterialTopTabsScreenNews = () => (
     <MaterialTopTabs.Navigator
       tabBarOptions={{
@@ -19,9 +19,10 @@ export const MaterialTopTabsScreenNews = () => (
         },
       }}
     >
+    
       <MaterialTopTabs.Screen
         name="Tab1"
-        component={Screen3}
+        component={screen3cham}
         options={{
           tabBarShowLabel: false,
           tabBarIcon: ({ color, size }) => (
