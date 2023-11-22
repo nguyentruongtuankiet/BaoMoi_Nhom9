@@ -14,7 +14,7 @@ import screenweather from "./screens/ScreenWeather.js";
 import tienich from "./screens/utilities";
 import screentrangchu from "./screens/User"
 import screen3cham from "./screens/BaCham"
-
+import screendocbao from "./screens/DocBao"
 import { TabScreen } from "./View/ViewBottomTab.js"
 
 const Stack = createStackNavigator();
@@ -24,7 +24,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Screen1">
-        <Stack.Screen
+        {/* <Stack.Screen
           name="Screen1"
           component={Screen1}
           options={{ headerShown: false }}
@@ -35,19 +35,19 @@ export default function App() {
           name="screen2"
           component={Screen2}
           options={{ headerShown: false }}
-        />
+        /> */}
         <Stack.Screen
 
           name="screen3"
           component={TabScreen}
           options={{ headerShown: false }}
-        />
+        /> 
 
              {/* <Stack.Screen
           name="screenweather"
           component={screenweather}
           options={{ headerShown: false }}
-        /> */}
+        />
                    {/* <Stack.Screen
           name="screentrangchu"
           component={screentrangchu}
@@ -59,8 +59,8 @@ export default function App() {
           component={screen3cham}
           options={{ headerShown: false }}
         /> */}
-
-         {/* <Stack.Screen
+{/* 
+         <Stack.Screen
           name="user"
           component={user}
           options={{ headerShown: false }}
@@ -75,7 +75,11 @@ export default function App() {
           component={tienich}
           options={{ headerShown: false }}
         /> */}
-          
+        <Stack.Screen
+          name="screendocbao"
+          component={screendocbao}
+          options={{ headerShown: false }}
+        /> 
 
       </Stack.Navigator>
     </NavigationContainer>
