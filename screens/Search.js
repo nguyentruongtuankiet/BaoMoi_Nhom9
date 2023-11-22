@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { TouchableOpacity, Text, FlatList } from "react-native";
 import { StyleSheet, View, TextInput, ScrollView, Image } from "react-native";
@@ -62,6 +61,7 @@ export default function Search() {
   };
   return (
     <View style={styles.container}>
+      <ScrollView nestedScrollEnabled>
       <View
         style={{
           flexDirection: "row",
@@ -76,7 +76,7 @@ export default function Search() {
           name="search"
           size={21}
           color="black"
-          style={{ position: "absolute", left: 55 }}
+          style={{ position: "absolute", left: 27 }}
         />
         <TextInput
           style={{
@@ -264,6 +264,7 @@ export default function Search() {
       <View
         style={{ height: 1, width: "100%", backgroundColor: "#EEECEC" }}
       ></View>
+      </ScrollView>
     </View>
   );
 }
@@ -276,5 +277,3 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
   },
 });
-
-
