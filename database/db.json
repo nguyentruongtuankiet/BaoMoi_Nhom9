@@ -1,0 +1,70 @@
+{
+    "users": [
+      {
+        "email": "phuvan@gmail.com",
+        "password": "123",
+        "id": "1",
+        "img": "https://image-us.24h.com.vn/upload/2-2023/images/2023-06-06/kim5_1-1686027959-673-width740height480.jpg",
+        "username": "phuvan"
+      },
+      {
+        "email": "tuankiet@gmail.com",
+        "password": "123",
+        "id": "2",
+        "img": "https://image-us.24h.com.vn/upload/2-2023/images/2023-06-06/kim5_1-1686027959-673-width740height480.jpg",
+        "username": "tuankiet"
+      },
+      {
+        "email": "thuylinh@gmail.com",
+        "password": "456",
+        "id": "3",
+        "img": "https://example.com/newuser.jpg",
+        "username": "thuylinh"
+      }
+    ],
+    "articles": [
+      {
+        "id": 1,
+        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_329_47566837/de1254c7448badd5f49a.jpg.webp",
+        "name": "Nghệ sĩ Thương Tín làm video nói rõ lùm xùm từ thiện với NSƯT Trịnh Kim Chi",
+        "content":"Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi."
+      },
+      {
+        "id": 2,
+        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_91_47566363/56caa402b44e5d10045f.jpg.webp",
+        "name": "Chồng hay ra khỏi nhà vào buổi tối, vợ âm thầm bám theo rồi bật khóc với cảnh tượng trước mắt"
+      },
+      {
+        "id": 3,
+        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_329_47566184/b4e38c279c6b75352c7a.jpg.webp",
+        "name": "Cặp đôi Vbiz tổ chức lễ ăn hỏi hôm nay: Ninh Dương Lan Ngọc diện áo dài, MisThy xuất hiện với nhan sắc lạ"
+      },
+      {
+        "id": 4,
+        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_115_47595743/ef6dcdb2dffe36a06fef.jpg.webp",
+        "name": "Mạnh tay xử lý tham nhũng, tiêu cực trong hoạt động tư pháp"
+      },
+      {
+        "id": 5,
+        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_3_47568077/8dd561787134986ac125.jpg.webp",
+        "name": "HÀNG LOẠT CÔNG TY BẢO HIỂM ĐÂM ĐƠN KIỆN HYUNDAI, KIA"
+      },
+      {
+        "id": 6,
+        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_91_47594985/a55f249636dadf8486cb.jpg.webp",
+        "name": "Diễn viên Việt nổi tiếng, đẹp trai yêu say đắm mẹ đơn thân hơn 6 tuổi: Dùng nhiều 'mưu kế' mới tán đổ"
+      },
+      {
+        "id": 7,
+        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_294_47595008/896f8aa698ea71b428fb.jpg.webp",
+        "name": "Những công việc được trả lương cao nhất trong năm 2023"
+      },
+      {
+        "id": 8,
+        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_207_47596081/ca7d14d6069aefc4b68b.jpg.webp",
+        "name": "Công an Hà Nội truy nã đối tượng Phùng Thị Tuyến"
+      }
+      
+    ]
+  }
+  

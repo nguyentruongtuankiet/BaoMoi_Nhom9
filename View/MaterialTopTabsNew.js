@@ -2,45 +2,132 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { LinearGradient } from "expo-linear-gradient";
 import Icon from "react-native-vector-icons/FontAwesome"; //
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import Screen3 from "../screens/Screen3";
-import { TouchableOpacity } from "react-native-web";
+import {
+  StyleSheet,
+  View,
+  Text,
+  Image,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 
 import screentimkiem from "../screens/Search"
+import Search from "../screens/Search";
+import user from "../screens/User";
 const MaterialTopTabs = createMaterialTopTabNavigator();
+
 import screen3cham from "../screens/BaCham"
-export const MaterialTopTabsScreenNews = () => (
+
+
+// ... (your imports)
+
+export const MaterialTopTabsScreenNews = ({ navigation }) => {
+  const getTabBarGradientColors = () => {
+    return ["#54acb5", "#1a698b"];
+  };
+
+  const renderTabBarButton = ({ route, state, navigation }) => {
+    const focusedRoute = getFocusedRouteNameFromRoute(route) || "";
+    const isFocused = focusedRoute === route.name;
+    const iconColor = isFocused ? "#gray" : "#fff";
+
+    const renderLabel = () => {
+      switch (route.name) {
+        case "Tab1":
+          return <Icon name="list-ul" color={iconColor} size={25} />;
+        case "Tab2":
+          return "Cho bạn";
+        case "Tab3":
+          return "Nóng";
+        case "Tab4":
+          return "Mới";
+        case "Tab5":
+          return "Tổng hợp";
+        case "Tab6":
+          return "Bóng đá VN";
+        case "Tab7":
+          return <Icon name="search" color={iconColor} size={25} />;
+        case "Tab8":
+          return <Icon name="user" color={iconColor} size={25} />;
+        default:
+          return null;
+      }
+    };
+
+    return (
+      <TouchableOpacity
+        key={route.key}
+        style={{
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        onPress={() => {
+          const event = navigation.emit({
+            type: "tabPress",
+            target: route.key,
+          });
+
+          if (!isFocused && !event.defaultPrevented) {
+            navigation.navigate(route.name);
+          }
+        }}
+      >
+        <Text style={{ color: iconColor }}>{renderLabel()}</Text>
+      </TouchableOpacity>
+    );
+  };
+
+  return (
     <MaterialTopTabs.Navigator
       tabBarOptions={{
+        scrollEnabled: true,
         tabStyle: {
-          flexDirection: "row",
-        //   alignItems: "center",
-        //   justifyContent: "space-evenly", // Canh đều các tab theo chiều ngang
+          flex: 1,
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          width: "auto",
+          padding: 10,
         },
       }}
+      tabBar={(props) => (
+        <LinearGradient
+        start={{ x: 0, y: 0 }} // Left
+        end={{ x: 1, y: 0 }}   // Right
+          colors={getTabBarGradientColors()}
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+            padding: 10,
+          }}
+        >
+          {props.state.routes.map((route) =>
+            renderTabBarButton({ route, state: props.state, navigation: props.navigation })
+          )}
+        </LinearGradient>
+      )}
     >
-    
       <MaterialTopTabs.Screen
         name="Tab1"
         component={screen3cham}
         options={{
           tabBarShowLabel: false,
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="list-ul" color={color}  size={19} 
-            style = {{padding: 0, margin: 0}}
-            />
-          ),
         }}
       />
       <MaterialTopTabs.Screen
         name="Tab2"
         component={Screen3}
         options={{
-          tabBarLabel: "Cho bạn", // Chữ in thường
+          tabBarLabel: "Cho bạn",
           tabBarLabelStyle: {
-            width: 45,
+            width: 51,
             textTransform: "none",
-            fontSize: 11,
+            fontSize: 13,
             fontWeight: "bold",
           },
         }}
@@ -52,9 +139,9 @@ export const MaterialTopTabsScreenNews = () => (
           tabBarLabel: "Nóng",
           tabBarLabelStyle: {
             textTransform: "none",
-            fontSize: 11,
+            fontSize: 13,
             fontWeight: "bold",
-            width: 30,
+            width: 35,
           },
         }}
       />
@@ -62,12 +149,12 @@ export const MaterialTopTabsScreenNews = () => (
         name="Tab4"
         component={Screen3}
         options={{
-          tabBarLabel: "Mới", // Chữ in thường
+          tabBarLabel: "Mới",
           tabBarLabelStyle: {
             textTransform: "none",
-            fontSize: 11,
+            fontSize: 13,
             fontWeight: "bold",
-            width: 21,
+            width: 25,
           },
         }}
       />
@@ -75,12 +162,12 @@ export const MaterialTopTabsScreenNews = () => (
         name="Tab5"
         component={Screen3}
         options={{
-          tabBarLabel: "Tổng hợp", // Chữ in thường
+          tabBarLabel: "Tổng hợp",
           tabBarLabelStyle: {
             textTransform: "none",
-            fontSize: 11,
+            fontSize: 13,
             fontWeight: "bold",
-            width: 53,
+            width: 60,
           },
         }}
       />
@@ -88,40 +175,32 @@ export const MaterialTopTabsScreenNews = () => (
         name="Tab6"
         component={Screen3}
         options={{
-          tabBarLabel: "Bóng đá", // Chữ in thường
+          tabBarLabel: "Bóng đá VN",
           tabBarLabelStyle: {
             textTransform: "none",
-            fontSize: 11,
+            fontSize: 13,
             fontWeight: "bold",
-            width: 50,
+            width: 51,
           },
         }}
       />
       <MaterialTopTabs.Screen
         name="Tab7"
-        component={screentimkiem}
+        component={Search}
         options={{
           tabBarShowLabel: false,
-          tabBarIcon: ({ color, size }) => (
-            <TouchableOpacity
-              
-            >
-              <Icon name="search" color={color} size={19} />
-            </TouchableOpacity>
-            
-          ),
         }}
       />
       <MaterialTopTabs.Screen
         name="Tab8"
-        component={Screen3}
+        component={user}
         options={{
           tabBarShowLabel: false,
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="user" color={color} size={19} />
-          ),
         }}
       />
     </MaterialTopTabs.Navigator>
   );
+};
+
+
   

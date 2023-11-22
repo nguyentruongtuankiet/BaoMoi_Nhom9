@@ -6,10 +6,12 @@ import Icon from "react-native-vector-icons/FontAwesome"; // Thay "FontAwesome" 
 
 import Screen1 from "./screens/Screen1";
 import Screen2 from "./screens/Screen2";
+import user from "./screens/User.js";
 // import Screen3 from "./screens/Screen3";
 // import Screen4 from "./screens/Screen4";
 // import Screen5 from "./screens/Screen5";
-// import screenweather from "./screens/ScreenWeather.js";
+import screenweather from "./screens/ScreenWeather.js";
+import tienich from "./screens/utilities";
 import screentrangchu from "./screens/User"
 import screen3cham from "./screens/BaCham"
 
@@ -27,16 +29,20 @@ export default function App() {
           component={Screen1}
           options={{ headerShown: false }}
         />
+       
         <Stack.Screen
+
           name="screen2"
           component={Screen2}
           options={{ headerShown: false }}
         />
         <Stack.Screen
+
           name="screen3"
           component={TabScreen}
           options={{ headerShown: false }}
         />
+
              {/* <Stack.Screen
           name="screenweather"
           component={screenweather}
@@ -53,6 +59,24 @@ export default function App() {
           component={screen3cham}
           options={{ headerShown: false }}
         /> */}
+
+         {/* <Stack.Screen
+          name="user"
+          component={user}
+          options={{ headerShown: false }}
+        />
+             <Stack.Screen
+          name="screenweather"
+          component={screenweather}
+          options={{ headerShown: false }}
+        />
+               <Stack.Screen
+          name="tienich"
+          component={tienich}
+          options={{ headerShown: false }}
+        /> */}
+          
+
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -5,6 +5,9 @@ import { MaterialTopTabsScreenVideo } from "../View/MaterialTopTabsVideo.js";
 import { abc } from "../View/MaterialTopTabsTrend.js"; 
 
 import Screen3 from "../screens/Screen3";
+import Screen4 from "../screens/Screen4";
+import Screen5 from "../screens/Screen5";
+import utilities from "../screens/utilities"
 
 const TabBottom = createBottomTabNavigator();
 
@@ -26,7 +29,7 @@ export const TabScreen = () => (
     />
     <TabBottom.Screen
       name="Video"
-      component={MaterialTopTabsScreenVideo}
+      component={Screen4}
       options={{
         headerShown: false,
         tabBarIcon: ({ color, size }) => (
@@ -40,7 +43,7 @@ export const TabScreen = () => (
     />
     <TabBottom.Screen
       name="Xu hướng"
-      component={abc}
+      component={Screen5}
       options={{
         headerShown: false,
         tabBarIcon: ({ color, size }) => (
@@ -54,7 +57,7 @@ export const TabScreen = () => (
     />
     <TabBottom.Screen
       name="Tiện ích"
-      component={Screen3}
+      component={utilities}
       options={{
         headerShown: false,
         tabBarIcon: ({ color, size }) => (

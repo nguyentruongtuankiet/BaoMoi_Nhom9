@@ -12,14 +12,20 @@ export default function Screen1({ navigation }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
-
-  const handleLogin = () => {
-    if (username === "1" && password === "1") {
-      navigation.navigate("screen3");
-    } else {
-      setError(true);
-    }
-  };
+  const [data, setData] = React.useState([])
+  React.useEffect(()=>{
+    fetch("http://localhost:3000/users")
+    .then((x)=> x.json())
+    .then((data) => {setData(data)})
+}, [])
+var handleLogin = () => {
+  const account = data.find((item) => item.username === username && item.password === password);
+  if (account) {
+    navigation.navigate("screen3");
+  } else {
+    window.alert("Invalid email or password");
+  }
+};
   return (
     <View style={styles.container}>
       <View style={{ flex: 3, alignItems: "center", justifyContent: "center" }}>

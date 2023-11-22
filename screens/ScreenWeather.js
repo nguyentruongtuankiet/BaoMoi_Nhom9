@@ -3,7 +3,7 @@ import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { AntDesign } from '@expo/vector-icons'; 
 
-export default function ScreenWeather() {
+export default function ScreenWeather({navigation}) {
   return (
     <LinearGradient
     style={styles.thiTit}
@@ -14,9 +14,11 @@ export default function ScreenWeather() {
   >
     <View style = {{flex: 1, flexDirection:"row", justifyContent:"space-between"}}>
         <View>
-        <TouchableOpacity 
-            
-            >
+        <TouchableOpacity
+                  onPress={() => {
+                navigation.goBack();
+            }}
+        >
                 <AntDesign name="arrowleft" size={24} color="white" />
             </TouchableOpacity>
         </View>
