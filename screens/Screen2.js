@@ -6,9 +6,85 @@ import {
   TextInput,
   TouchableOpacity,
 } from "react-native";
-import React from "react";
+import React, { useState, useEffect } from 'react';
+
 
 export default function Screen2() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/users");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setUsers(data);
+      } catch (error) {
+        console.error("There was a problem fetching the data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const isValidEmail = (email) => {
+    const emailPattern = /\S+@\S+\.\S+/;
+    return emailPattern.test(email);
+  };
+  const handleRegister = async () => {
+    if (!username || !password || !confirmPassword || !email) {
+      alert("Vui lòng điền đầy đủ thông tin.");
+      return;
+    }
+    if (!isValidEmail(email)) {
+      alert("Email không hợp lệ.");
+      return;
+    }
+    if (password !== confirmPassword) {
+      alert("Mật khẩu xác nhận không khớp.");
+      return;
+    }
+
+    try {
+      const maxId = Math.max(...users.map((user) => parseInt(user.id || 0)));
+      const newUserId = maxId + 1;
+
+      const newUser = {
+        id: newUserId.toString(),
+        email: email,
+        password: password,
+        username: username,
+        img: "",
+      };
+
+      const response = await fetch("http://localhost:3000/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newUser),
+      });
+
+      if (response.ok) {
+        alert("Đăng ký thành công!");
+        setUsername("");
+        setPassword("");
+        setConfirmPassword("");
+        setEmail("");
+        navigation.navigate("screen1");
+      } else {
+        alert("Có lỗi xảy ra khi đăng ký.");
+      }
+    } catch (error) {
+      alert("Đã xảy ra lỗi: " + error.message);
+    }
+  };
   return (
     <View style={styles.container}>
       <View style={{ flex: 3, alignItems: "center", justifyContent: "center" }}>
@@ -28,9 +104,10 @@ export default function Screen2() {
               borderRadius: 10,
               paddingLeft: 10,
               borderWidth: 1,
-              color:"#b6bdc3",
-              backgroundColor:"#fff"
+              color: "#b6bdc3",
+              backgroundColor: "#fff",
             }}
+            onChangeText={(text) => setUsername(text)}
           ></TextInput>
         </View>
         <View style={{ alignItems: "center" }}>
@@ -42,9 +119,11 @@ export default function Screen2() {
               borderRadius: 10,
               paddingLeft: 10,
               borderWidth: 1,
-              color:"#b6bdc3",
-              backgroundColor:"#fff"
+              color: "#b6bdc3",
+              backgroundColor: "#fff",
             }}
+            onChangeText={(text) => setPassword(text)}
+            secureTextEntry={true}
           ></TextInput>
         </View>
         <View style={{ alignItems: "center" }}>
@@ -56,9 +135,11 @@ export default function Screen2() {
               borderRadius: 10,
               paddingLeft: 10,
               borderWidth: 1,
-              color:"#b6bdc3",
-              backgroundColor:"#fff"
+              color: "#b6bdc3",
+              backgroundColor: "#fff",
             }}
+            onChangeText={(text) => setConfirmPassword(text)}
+            secureTextEntry={true}
           ></TextInput>
         </View>
         <View style={{ alignItems: "center" }}>
@@ -70,15 +151,19 @@ export default function Screen2() {
               borderRadius: 10,
               paddingLeft: 10,
               borderWidth: 1,
-              color:"#b6bdc3",
-              backgroundColor:"#fff"
+              color: "#b6bdc3",
+              backgroundColor: "#fff",
             }}
+            onChangeText={(text) => setEmail(text)}
           ></TextInput>
         </View>
       </View>
 
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <TouchableOpacity style={styles.touchableOpacity}>
+        <TouchableOpacity
+          style={styles.touchableOpacity}
+          onPress={handleRegister}
+        >
           <View
             style={{
               width: 345,
@@ -103,17 +188,19 @@ export default function Screen2() {
           </View>
         </TouchableOpacity>
       </View>
- 
+
       <View
         style={{ flex: 1, justifyContent: "flex-end", alignItems: "center" }}
       >
-        <Text style={{ fontSize: 16, color: "#fff", marginBottom: 10}}>
+        <Text style={{ fontSize: 16, color: "#fff", marginBottom: 10 }}>
           Bạn có sẵn sàng để tạo tài khoảng?{" "}
-          <TouchableOpacity onPress={()=>{
-              navigation.navigate("screen1")
-            }}><span style={{color:'#438ff6', fontSize: 16}}
-              
-              >Đăng nhập</span></TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate("screen1");
+            }}
+          >
+            <span style={{ color: "#438ff6", fontSize: 16 }}>Đăng nhập</span>
+          </TouchableOpacity>
         </Text>
       </View>
     </View>
