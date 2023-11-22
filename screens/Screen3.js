@@ -12,7 +12,7 @@ import { FlatList } from "react-native";
 
 export default function Screen3({route, navigation}) {
   const [data, setData] = useState([]);
- 
+
 useEffect(()=>{
   fetch("http://localhost:3000/articles")
   .then((x)=> x.json())
@@ -36,7 +36,10 @@ useEffect(()=>{
           data={data}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
-            <View style={{ height: 95,width: 350,alignItems:"center",marginTop: 12}}>
+            <TouchableOpacity
+            onPress={() => navigation.navigate("screendocbao", { articleId: item.id, name: item.name, content: item.content, image: item.image })}
+              >
+                  <View style={{ height: 95,width: 350,alignItems:"center",marginTop: 12}}>
               <View style={{ height: 88,width: 350,flexDirection: "row",margin: 5,}}>
                 <Image
                   source={{ uri: item.path }}
@@ -56,6 +59,8 @@ useEffect(()=>{
               </View>
               <View style={{height: 1, width: 350, backgroundColor:"rgba(0, 0, 0, 0.10)",marginVertical:3 }}></View>
             </View>
+            </TouchableOpacity>
+          
           )}
         ></FlatList>
      
