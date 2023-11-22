@@ -5,23 +5,24 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  ScrollView
 } from "react-native";
-import React from "react";
+import React, { useState, useEffect} from "react";
 import { FlatList } from "react-native";
-const data = [
-  {
-    image: "https://vapa.vn/wp-content/uploads/2022/12/anh-canh-dep-001-1.jpg",
-    name: "Tuấn Kiệt đẹp trai nhất TG",
-  },
-  {
-    image:
-      "https://cdn3.ivivu.com/2014/12/chum-anh-tuyet-dep-ve-khung-canh-than-tien-cua-du-lich-nauy-iVIVU.com-1.jpg",
-    name: "Tuấn Kiệt cưới hoa hậu",
-  },
-];
-export default function Screen3() {
+
+export default function Screen3({route, navigation}) {
+  const [data, setData] = useState([]);
+ 
+useEffect(()=>{
+  fetch("http://localhost:3000/articles")
+  .then((x)=> x.json())
+  .then((data) => {setData(data)})
+}, [])
   return (
     <View style={styles.container}>
+       <ScrollView
+        nestedScrollEnabled={true}
+      >
       <View
         style={{
           height: 750,
@@ -30,14 +31,15 @@ export default function Screen3() {
        
         }}
       >
-        <FlatList
+     
+                <FlatList
           data={data}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
             <View style={{ height: 95,width: 350,alignItems:"center",marginTop: 12}}>
               <View style={{ height: 88,width: 350,flexDirection: "row",margin: 5,}}>
                 <Image
-                  source={{ uri: item.image }}
+                  source={{ uri: item.path }}
                   style={{ height: 86, width: 157, borderRadius: 9 }}
                 />
                 <View style={{height: 86,width: 180,justifyContent: "space-between",marginLeft:8}}>
@@ -55,8 +57,11 @@ export default function Screen3() {
               <View style={{height: 1, width: 350, backgroundColor:"rgba(0, 0, 0, 0.10)",marginVertical:3 }}></View>
             </View>
           )}
-        />
+        ></FlatList>
+     
+
       </View>
+      </ScrollView>
     </View>
   );
 }
