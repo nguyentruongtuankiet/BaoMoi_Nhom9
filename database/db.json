@@ -20,6 +20,13 @@
       "id": "3",
       "img": "https://example.com/newuser.jpg",
       "username": "thuylinh"
+    },
+    {
+      "id": "4",
+      "email": "huong@gmail.com",
+      "password": "456",
+      "username": "ngochuong",
+      "img": ""
     }
   ],
   "articles": [
@@ -29,7 +36,6 @@
       "name": "Nghệ sĩ Thương Tín làm video nói rõ lùm xùm từ thiện với NSƯT Trịnh Kim Chi",
       "content": [
         "Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
-
         "Về lý do nhắc lại ồn ào này, nhạc sĩ Tô Hiếu cho biết đây là việc nghệ sĩ Thương Tín nên làm vì 'đó là số tiền rất lớn, nhiều người lại nghĩ không đúng về anh ấy vì những ồn ào trong quá khứ'.Nhạc sĩ Tô Hiếu cho biết thêm, trong video này, nghệ sĩ Thương Tín cũng sẽ kể về hơn 100 bộ phim mà nam tài tử đã tham gia để khán giả hiểu một cách tường tận.",
         "Mỗi lần đi ngang những nơi anh ấy từng quay phim, anh ấy đều bồi hồi kể lại cho tôi các khoảnh khắc đáng nhớ. Tôi sợ sau này Thương Tín không còn minh mẫn nên muốn làm video để lưu lại những kỷ niệm vui buồn hoặc khó khăn khi đóng phim của anh ấy"
       ],
@@ -45,7 +51,6 @@
       "name": "Chồng hay ra khỏi nhà vào buổi tối, vợ âm thầm bám theo rồi bật khóc với cảnh tượng trước mắt",
       "content": [
         "Tôi năm nay 34 tuổi, kết hôn được 6 năm. Chồng hơn tôi 4 tuổi, anh ấy là người chín chắn, luôn lo toan cho vợ con. Trong đời sống hôn nhân, tôi và chồng từ trước khi cưới đã thỏa thuận với nhau một nguyên tắc đó là việc to hay nhỏ đều phải chia sẻ với nhau. Giữa chúng tôi không có khoảng cách, không phân biệt chuyện kiếm tiền cao thấp, cùng nhau san sẻ mọi chuyện. Tôi là người chăm sóc chồng con, còn anh ấy lo về kinh tế.",
-
         "Tôi choáng váng, chưa hiểu chuyện gì đang xảy ra, thì xuất hiện người phụ nữ trẻ hơn tôi khoảng 5 - 6 tuổi. Cô ta tìm cách chạy ra khỏi cửa, trong khi chồng cố ôm chặt tôi để cản đường. Bất lực nhìn nhân tình của chồng chạy thoát, tôi chỉ biết khóc vì sốc. Mọi thứ đến quá nhanh, quá sức tưởng tượng của tôi. Chồng đã phũ phàng phản bội vợ con khi mà gia đình đang êm ấm, hạnh phúc.",
         "Chồng tôi có người bên ngoài, tôi đau đớn trong dằn vặt, căm ghét người chồng phản bội. Mặc cho chồng van xin, hứa hẹn sẽ không bao giờ tái phạm… Tôi vẫn muốn nộp đơn ra tòa để ly hôn. Những ngày qua, chồng tôi tỏ ra ăn năn, hối lối. Anh ta còn gọi điện nhờ vả bố mẹ vợ, anh chị bên vợ tác động để tôi tha thứ. Điều này càng làm tôi thêm suy sụp, tôi không muốn chuyện của mình làm ảnh hưởng đến những người thân."
       ],
@@ -60,7 +65,6 @@
       "name": "Cặp đôi Vbiz tổ chức lễ ăn hỏi hôm nay: Ninh Dương Lan Ngọc diện áo dài",
       "content": [
         "Trong lễ ăn hỏi sáng nay, Ninh Dương Lan Ngọc - Thùy Anh là những người bạn thân của cô dâu Phương Lan cũng có mặt, diện áo dài xanh truyền thống. Ngoài ra, sự có mặt của MisThy với nhan sắc ngày một thăng hạng cũng khiến dân tình trầm trồ.",
-
         "Được biết sau lễ ăn hỏi hôm nay, lễ cưới của Phương Lan và Phan Đạt sẽ được diễn ra vào chiều 20/11 tại một nhà hàng ở TP HCM, hứa hẹn quy tụ nhiều sao khủng Vbiz như: Thu Trang, Tiến Luật, Puka, Gin Tuấn Kiệt, Khả Như, Huỳnh Phương,...",
         "Phương Lan và Phan Đạt có 5 năm hẹn hò trước khi về chung nhà. Cả hai khiến nhiều người ngưỡng mộ khi Phan Đạt quyết định từ bỏ mọi thứ để đứng phía sau, giúp sức và ủng hộ con đường nghệ thuật của Phương Lan. Trong một talkshow, Phương Lan từng chia sẻ: 'Nếu chọn sự nghiệp thì tôi sẽ không có Phan Đạt. Nhưng nếu chọn Phan Đạt thì tôi có cả hai, ngại gì mà mình không chọn Đạt. Người đàn ông chịu đứng sau để hỗ trợ mình mọi thứ trong công việc thì không dễ dàng gì.'"
       ],
@@ -94,7 +98,6 @@
       "name": "HÀNG LOẠT CÔNG TY BẢO HIỂM ĐÂM ĐƠN KIỆN HYUNDAI, KIA",
       "content": [
         "Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
-
         "Huyndai cho biết rằng họ thất vọng với quyết định này và mong chờ một phán quyết cuối cùng. Hãng cũng cho biết các đại lý đã cài đặt phần mềm chống trộm trên hơn 1 triệu xe."
       ],
       "image": [
@@ -333,7 +336,6 @@
       "name": "Những cung đường Tây Bắc!",
       "type": "tonghop"
     },
-
     {
       "id": 27,
       "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_423_47607485/02baf972ea3e03605a2f.jpg.webp",

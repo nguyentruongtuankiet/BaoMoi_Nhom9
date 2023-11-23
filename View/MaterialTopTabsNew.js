@@ -122,6 +122,7 @@ export const MaterialTopTabsScreenNews = ({ navigation }) => {
       <MaterialTopTabs.Screen
         name="Tab2"
         component={Screen3}
+        initialParams={{ tabName: "Cho bạn" }}
         options={{
           tabBarLabel: "Cho bạn",
           tabBarLabelStyle: {
@@ -135,6 +136,7 @@ export const MaterialTopTabsScreenNews = ({ navigation }) => {
       <MaterialTopTabs.Screen
         name="Tab3"
         component={Screen3}
+        initialParams={{ tabName: "nong" }}
         options={{
           tabBarLabel: "Nóng",
           tabBarLabelStyle: {
@@ -148,6 +150,7 @@ export const MaterialTopTabsScreenNews = ({ navigation }) => {
       <MaterialTopTabs.Screen
         name="Tab4"
         component={Screen3}
+        initialParams={{ tabName: "moi" }}
         options={{
           tabBarLabel: "Mới",
           tabBarLabelStyle: {
@@ -161,6 +164,7 @@ export const MaterialTopTabsScreenNews = ({ navigation }) => {
       <MaterialTopTabs.Screen
         name="Tab5"
         component={Screen3}
+        initialParams={{ tabName: "tonghop" }}
         options={{
           tabBarLabel: "Tổng hợp",
           tabBarLabelStyle: {
@@ -174,6 +178,7 @@ export const MaterialTopTabsScreenNews = ({ navigation }) => {
       <MaterialTopTabs.Screen
         name="Tab6"
         component={Screen3}
+        initialParams={{ tabName: "sport" }}
         options={{
           tabBarLabel: "Bóng đá VN",
           tabBarLabelStyle: {
