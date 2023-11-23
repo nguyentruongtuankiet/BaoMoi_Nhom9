@@ -20,6 +20,13 @@
       "id": "3",
       "img": "https://example.com/newuser.jpg",
       "username": "thuylinh"
+    },
+    {
+      "id": "4",
+      "email": "huong@gmail.com",
+      "password": "456",
+      "username": "ngochuong",
+      "img": ""
     }
   ],
   "articles": [
@@ -29,7 +36,6 @@
       "name": "Nghệ sĩ Thương Tín làm video nói rõ lùm xùm từ thiện với NSƯT Trịnh Kim Chi",
       "content": [
         "Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
-
         "Về lý do nhắc lại ồn ào này, nhạc sĩ Tô Hiếu cho biết đây là việc nghệ sĩ Thương Tín nên làm vì 'đó là số tiền rất lớn, nhiều người lại nghĩ không đúng về anh ấy vì những ồn ào trong quá khứ'.Nhạc sĩ Tô Hiếu cho biết thêm, trong video này, nghệ sĩ Thương Tín cũng sẽ kể về hơn 100 bộ phim mà nam tài tử đã tham gia để khán giả hiểu một cách tường tận.",
         "Mỗi lần đi ngang những nơi anh ấy từng quay phim, anh ấy đều bồi hồi kể lại cho tôi các khoảnh khắc đáng nhớ. Tôi sợ sau này Thương Tín không còn minh mẫn nên muốn làm video để lưu lại những kỷ niệm vui buồn hoặc khó khăn khi đóng phim của anh ấy"
       ],
@@ -45,14 +51,12 @@
       "name": "Chồng hay ra khỏi nhà vào buổi tối, vợ âm thầm bám theo rồi bật khóc với cảnh tượng trước mắt",
       "content": [
         "Tôi năm nay 34 tuổi, kết hôn được 6 năm. Chồng hơn tôi 4 tuổi, anh ấy là người chín chắn, luôn lo toan cho vợ con. Trong đời sống hôn nhân, tôi và chồng từ trước khi cưới đã thỏa thuận với nhau một nguyên tắc đó là việc to hay nhỏ đều phải chia sẻ với nhau. Giữa chúng tôi không có khoảng cách, không phân biệt chuyện kiếm tiền cao thấp, cùng nhau san sẻ mọi chuyện. Tôi là người chăm sóc chồng con, còn anh ấy lo về kinh tế.",
-
         "Tôi choáng váng, chưa hiểu chuyện gì đang xảy ra, thì xuất hiện người phụ nữ trẻ hơn tôi khoảng 5 - 6 tuổi. Cô ta tìm cách chạy ra khỏi cửa, trong khi chồng cố ôm chặt tôi để cản đường. Bất lực nhìn nhân tình của chồng chạy thoát, tôi chỉ biết khóc vì sốc. Mọi thứ đến quá nhanh, quá sức tưởng tượng của tôi. Chồng đã phũ phàng phản bội vợ con khi mà gia đình đang êm ấm, hạnh phúc.",
         "Chồng tôi có người bên ngoài, tôi đau đớn trong dằn vặt, căm ghét người chồng phản bội. Mặc cho chồng van xin, hứa hẹn sẽ không bao giờ tái phạm… Tôi vẫn muốn nộp đơn ra tòa để ly hôn. Những ngày qua, chồng tôi tỏ ra ăn năn, hối lối. Anh ta còn gọi điện nhờ vả bố mẹ vợ, anh chị bên vợ tác động để tôi tha thứ. Điều này càng làm tôi thêm suy sụp, tôi không muốn chuyện của mình làm ảnh hưởng đến những người thân."
       ],
       "image": [
         "https://giadinh.mediacdn.vn/thumb_w/640/296230595582509056/2022/7/16/ly-hon-2-nam-nhung-hanh-dong-nay-cua-vo-cu-khien-toi-an-han-vo-cung-1657963603604-1657963603909889577402.jpeg",
         "https://giadinh.mediacdn.vn/thumb_w/640/296230595582509056/2023/3/5/bo-chong-16780104200921711804886.jpg"
-        
       ]
     },
     {
@@ -61,7 +65,6 @@
       "name": "Cặp đôi Vbiz tổ chức lễ ăn hỏi hôm nay: Ninh Dương Lan Ngọc diện áo dài",
       "content": [
         "Trong lễ ăn hỏi sáng nay, Ninh Dương Lan Ngọc - Thùy Anh là những người bạn thân của cô dâu Phương Lan cũng có mặt, diện áo dài xanh truyền thống. Ngoài ra, sự có mặt của MisThy với nhan sắc ngày một thăng hạng cũng khiến dân tình trầm trồ.",
-
         "Được biết sau lễ ăn hỏi hôm nay, lễ cưới của Phương Lan và Phan Đạt sẽ được diễn ra vào chiều 20/11 tại một nhà hàng ở TP HCM, hứa hẹn quy tụ nhiều sao khủng Vbiz như: Thu Trang, Tiến Luật, Puka, Gin Tuấn Kiệt, Khả Như, Huỳnh Phương,...",
         "Phương Lan và Phan Đạt có 5 năm hẹn hò trước khi về chung nhà. Cả hai khiến nhiều người ngưỡng mộ khi Phan Đạt quyết định từ bỏ mọi thứ để đứng phía sau, giúp sức và ủng hộ con đường nghệ thuật của Phương Lan. Trong một talkshow, Phương Lan từng chia sẻ: 'Nếu chọn sự nghiệp thì tôi sẽ không có Phan Đạt. Nhưng nếu chọn Phan Đạt thì tôi có cả hai, ngại gì mà mình không chọn Đạt. Người đàn ông chịu đứng sau để hỗ trợ mình mọi thứ trong công việc thì không dễ dàng gì.'"
       ],
@@ -95,14 +98,11 @@
       "name": "HÀNG LOẠT CÔNG TY BẢO HIỂM ĐÂM ĐƠN KIỆN HYUNDAI, KIA",
       "content": [
         "Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
-
         "Huyndai cho biết rằng họ thất vọng với quyết định này và mong chờ một phán quyết cuối cùng. Hãng cũng cho biết các đại lý đã cài đặt phần mềm chống trộm trên hơn 1 triệu xe."
-    
       ],
       "image": [
         "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_3_47568077/cc28438553c9ba97e3d8.jpg",
         "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_3_47568077/ba982c353c79d5278c68.jpg.webp"
-   
       ]
     },
     {
@@ -120,76 +120,254 @@
       "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_207_47596081/ca7d14d6069aefc4b68b.jpg.webp",
       "name": "Công an Hà Nội truy nã đối tượng Phùng Thị Tuyến"
     },
-
     {
-      "id": 25,
+      "id": 9,
+      "type": "nong",
+      "path": "https://image.nhandan.vn/w800/Uploaded/2023/rktmgt/2023_09_22/ndo_br_vuon-hoa-dao-ngay-tet-nguyen-dan-4354.jpg.webp",
+      "name": "Thông báo lịch nghỉ Tết Nguyên đán năm 2024",
+      "content": [
+        "Ngày 22/11, Bộ Lao động-Thương binh và Xã hội thông báo về việc nghỉ Tết Âm lịch (Tết Nguyên đán) và nghỉ lễ Quốc khánh năm 2024 đối với cán bộ, công chức-viên chức và người lao động.",
+        "Thực hiện ý kiến chỉ đạo của Thủ tướng Chính phủ Phạm Minh Chính tại Công văn số 8662/VPCP-KGVX ngày 3/11/2023 của Văn phòng Chính phủ về việc nghỉ Tết Âm lịch và nghỉ lễ Quốc khánh năm 2024 đối với cán bộ, công chức-viên chức và người lao động, Bộ Lao động-Thương binh và Xã hội thông báo để các cơ quan hành chính, sự nghiệp, tổ chức chính trị, tổ chức chính trị-xã hội, doanh nghiệp và những người sử dụng lao động khác thực hiện lịch nghỉ Tết Âm lịch và nghỉ lễ Quốc khánh trong năm 2024.",
+        "Cụ thể, cán bộ, công chức-viên chức và người lao động của các cơ quan hành chính, sự nghiệp, tổ chức chính trị, tổ chức chính trị-xã hội (sau đây gọi tắt là công chức-viên chức) được nghỉ Tết Âm lịch năm 2024 từ thứ năm, ngày 8/2/2024 Dương lịch (tức ngày 29 tháng Chạp năm Quý Mão) đến hết thứ tư, ngày 14/2/2024 Dương lịch (tức ngày mùng 5 tháng Giêng năm Giáp Thìn)."
+      ],
+      "image": [
+        "https://cdn.tuoitre.vn/thumb_w/730/471584752817336320/2023/11/22/nghi-tet-am-lich--17006492896652104641465.jpg",
+        "https://image.nhandan.vn/w800/Uploaded/2023/rktmgt/2023_09_22/ndo_br_vuon-hoa-dao-ngay-tet-nguyen-dan-4354.jpg.webp",
+        "https://cdn.thuvienphapluat.vn/phap-luat/2022-2/HQ/NGHI-TET-AM.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "nong",
+      "path": "https://image.plo.vn/w850/Uploaded/2023/bivxpcwk/2023_11_22/masatada-ishii-3906-5778.jpg.webp",
+      "name": "Thái Lan ‘đánh canh bạc’ với tân HLV Masatada Ishii, Polking có thể trở lại Việt Nam",
+      "content": [
+        "Masatada Ishii, tân thuyền trưởng tuyển Thái Lan là HLV người Nhật thứ hai trong lịch sử 19 thầy ngoại dẫn dắt tuyển Thái Lan sau Akira Nishino.M. Ishii không phải là cái tên quá xa lạ với fan Thái Lan vì ông cũng “ăn cơm Thái mòn răng rồi”.",
+        "M. Ishii lăn lộn ở Thai-League đã nhiều năm từ việc làm thuyền trưởng CLB Samut Prakan từ năm 2019, sau đó được Buriram Utd mời về năm 2021 và lên ngôi vô địch Thai-League hai mùa liên tiếp cùng đội bóng đại gia này mùa rồi. Năm ngoái Ishii cũng từng suýt bị Buriram sa thải vì thành tích kém ấn tượng.",
+        "Dẫn dắt Buriram Utd vô địch Thai-League không phải là vấn đề lớn, dễ hơn rất nhiều so với một HLV dẫn dắt Hà Nội FC vô địch V-League. Buriram Utd mạnh về tiền bạc, là nơi “đội tuyển Thái Lan” thu nhỏ thi đấu, ngoại binh cực chất, sân bóng Chang Arena cùng đẳng cấp như các sân ngoại hạng Anh. Buriram thuộc sở hữu của tỉ phú Chidchob."
+      ],
+      "image": [
+        "https://image.plo.vn/w850/Uploaded/2023/bivxpcwk/2023_11_22/masatada-ishii-3906-5778.jpg.webp",
+        "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_114_47606879/5ff0e232f17e1820416f.jpg",
+        "https://image.plo.vn/Uploaded/2023/bivxpcwk/2023_11_22/mano-polking-2984-6102.jpg.webp"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "nong",
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_17_47606062/5cd60a26196af034a97b.jpg",
+      "name": "Chuẩn bị xét xử sơ thẩm các vụ án liên quan Việt Á, Tân Hoàng Minh",
+      "content": [
+        "Ngày 22-11, tại Hà Nội, Thường trực Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, tiêu cực (Ban Chỉ đạo) đã tổ chức cuộc họp dưới sự chủ trì của Tổng Bí thư Nguyễn Phú Trọng, Trưởng Ban Chỉ đạo. Cuộc họp thảo luận, cho ý kiến đối với các nội dung: kết quả chỉ đạo xử lý một số vụ án, vụ việc thuộc diện Ban Chỉ đạo theo dõi, chỉ đạo; kết quả chỉ đạo giám sát, làm rõ sai phạm, trách nhiệm của các tổ chức, cá nhân trong việc xây dựng, ban hành chính sách, pháp luật liên quan đến lĩnh vực ngân hàng, tài chính, tài sản công, định giá, tự chủ tài chính, chứng khoán, trái phiếu doanh nghiệp.",
+        "Tại cuộc họp, Thường trực Ban Chỉ đạo thống nhất đánh giá, từ sau phiên họp thứ 23 của Ban Chỉ đạo (tháng 1-2023) đến nay, các cơ quan chức năng đã có nhiều nỗ lực, cố gắng, thực hiện nghiêm kết luận của Tổng Bí thư, Trưởng Ban Chỉ đạo. Công tác phòng, chống tham nhũng, tiêu cực (PCTNTC) nói chung, công tác điều tra, xử lý các vụ án, vụ việc tham nhũng, tiêu cực nói riêng tiếp tục được đẩy mạnh, quyết liệt, đồng bộ, hiệu quả hơn cả ở Trung ương và địa phương; tiến độ điều tra, xử lý các vụ án, vụ việc thuộc diện Ban Chỉ đạo theo dõi, chỉ đạo cơ bản đáp ứng yêu cầu của Ban Chỉ đạo và Thường trực Ban Chỉ đạo, có vụ vượt kế hoạch đề ra.",
+        "Đến nay đã hoàn thành xét xử sơ thẩm 5 vụ án trọng điểm theo kế hoạch của Ban Chỉ đạo, gồm: vụ án xảy ra tại Dự án khu thương mại và dân cư Tân Việt Phát 2, phường Phú Hài, thành phố Phan Thiết, tỉnh Bình Thuận; vụ án xảy ra tại Cục lãnh sự, Bộ Ngoại giao và một số đơn vị liên quan; vụ án buôn lậu, vận chuyển trái phép tiền tệ qua biên giới xảy ra tại khóm 5, phường Châu Phú An, thành phố Châu Đốc, tỉnh An Giang; vụ án xảy ra tại Dự án đường cao tốc Đà Nẵng - Quảng Ngãi (giai đoạn II); vụ án xảy ra tại Sở Y tế tỉnh Quảng Ninh, Công ty AIC và đơn vị có liên quan."
+      ],
+      "image": [
+        "https://image.sggp.org.vn/w560/Uploaded/2023/ayhusbb/2023_11_22/anh-hop-thuong-truc-ban-chi-dao-pctntc-1-7921.jpg",
+        "https://image.sggp.org.vn/w560/Uploaded/2023/ayhusbb/2023_11_22/anh-hop-thuong-truc-ban-chi-dao-pctntc-6-2490.jpg",
+        "https://image.sggp.org.vn/w560/Uploaded/2023/ayhusbb/2023_11_22/anh-hop-thuong-truc-ban-chi-dao-pctntc-4-3237.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "nong",
+      "path": "https://static-images.vnncdn.net/files/publish/2023/11/22/zelensky-1261.jpg",
+      "name": "Ông Zelensky nói tình hình khó khăn ở 4 hướng tại DPR, Kiev nhận thêm viện trợ",
+      "content": [
+        "Bộ Tài chính Ukraine cho biết, nước này đã nhận được khoản hỗ trợ tài chính từ Liên minh châu Âu (EU) với số tiền 1,5 tỷ Euro. “Hôm nay (22/11), Ukraine đã nhận được đợt hỗ trợ tài chính lớn thứ 10 từ EU cho năm 2023 với số tiền 1,5 tỷ Euro”, Bộ Tài chính Ukraine thông báo.",
+        "Theo phía Ukraine, tổng hỗ trợ tài chính cho Kiev từ EU trong năm nay đã vượt quá 16,5 tỷ Euro. Dự kiến ​​Ukraine sẽ nhận được đợt hỗ trợ tài chính cuối cùng cho năm 2023 vào cuối tháng 12, với điều kiện phải đáp ứng các điều kiện mà các bên đã thỏa thuận.",
+        "Chúng tôi hi vọng cơ chế hỗ trợ nhiều năm cho Ukraine với số tiền 50 tỷ Euro sẽ được các nước thành viên EU phê duyệt càng nhanh càng tốt”, Bộ Tài chính Ukraine cho biết thêm."
+      ],
+      "image": [
+        "https://static-images.vnncdn.net/files/publish/2023/11/22/zelensky-1261.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "nong",
+      "path": "https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2023/11/22/7cff5bc5a18608d85197-17006428092282002880310.jpg",
+      "name": "Cứu nạn tàu cá 39 ngư dân trôi dạt giữa biển Đông",
+      "content": [
+        "Tin từ Trung tâm phối hợp tìm kiếm cứu nạn hàng hải Việt Nam (Bộ GTVT), sự việc xảy ra vào 3h ngày 21/11, tàu cá QNg 90251 TS cùng 39 lao động bất ngờ bị hỏng máy, nước tràn vào tàu phần mũi tại vị trí cách Đông Nam mũi Đà Nẵng 275 hải lý (khu vực vùng biển giữa Hoàng Sa và Trường Sa). ",
+        "Trước tình hình trên, để đảm bảo an toàn hàng hải và tính mạng của 39 ngư dân trên tàu QNg 90251 TS, Trung tâm đã điều động tàu SAR 412 thường trực tại Đà Nẵng ngay lập tức xuất phát thực hiện nhiệm vụ cứu nạn.",
+        "Bộ GTVT cho biết, đây là vụ việc liên quan đến nhiều ngư dân, vị trí bị nạn cách xa bờ trong điều kiện thời tiết phức tạp, do đó lực lượng cứu nạn thực hiện quy trình nghiệp vụ khép kín, triển khai khẩn trương, kịp thời, hiệu quả. Toàn bộ hoạt động tại hiện trường được chỉ huy, điều hành trực tiếp từ Sở Chỉ huy Trung tâm qua hệ thống truyền hình trực tuyến vệ tinh VSAT."
+      ],
+      "image": [
+        "https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2023/11/22/7cff5bc5a18608d85197-17006428092282002880310.jpg",
+        "https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2023/11/22/7cff5bc5a18608d85197-17006428092282002880310.jpg",
+        "https://bcp.cdnchinhphu.vn/thumb_w/640/334894974524682240/2023/11/22/d9ca16ffe2bc4be212ad-17006428143541313272424.jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "nong",
+      "path": "https://baovephapluat.vn/data/images/0/2023/11/22/thinhpv/d9f1755b-3ff6-4d2c-b453-2876edac12f8-5bfd384c2daf451eb38d73742609db76.jpg?dpi=150&quality=100&w=820",
+      "name": "Kiểm tra nồng độ cồn, phát hiện đối tượng tàng trữ trái phép chất ma túy",
+      "content": [
+        "Trước đó, vào khoảng 13h00 ngày 18/11/2023, tại đường 203, thuộc địa bàn xã Lâm Động, huyện Thuỷ Nguyên, Hải Phòng, Công an quận Hồng Bàng và Công an huyện Thuỷ Nguyên phối hợp tổ chức, triển khai lực lượng tuần tra kiểm soát, xử lý vi phạm về nồng độ cồn trên địa bàn huyện Thuỷ Nguyên. Tại đây, Tổ công tác phát hiện 1 người nam giới điều khiển xe mô tô BKS: 16K8-6840 vi phạm trật tự an toàn giao thông.",
+        "Tổ công tác đã yêu cầu dừng phương tiện kiểm tra. Trong quá trình kiểm tra, tổ công tác thấy người điều khiển xe có nhiều biểu hiện nghi vấn bất thường nên đã tiến hành kiểm tra người và phương tiện thì phát hiện tại túi quần phía sau bên trái có 1 túi nilong chứa chất bột màu trắng (nghi là ma tuý). "
+      ],
+      "image": [
+        "https://baovephapluat.vn/data/images/0/2023/11/22/thinhpv/d9f1755b-3ff6-4d2c-b453-2876edac12f8-5bfd384c2daf451eb38d73742609db76.jpg?dpi=150&quality=100&w=820"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "moi",
+      "path": "https://baoangiang.com.vn/image/fckeditor/upload/2023/20231122/images/CH%C3%99A-V%E1%BA%A0N-LINH.jpg",
+      "name": "Tịnh Biên phấn đấu cho năm mới 2024",
+      "content": [
+        "Sau khi chuyển mình thành thị xã vùng biên giới, Tịnh Biên đã hoàn thành tốt các chỉ tiêu phát triển KTXH, “về đích” sớm hơn kế hoạch. Đến nay, thị xã đã thực hiện đạt và vượt 14/14 chỉ tiêu KTXH năm 2023. Trong đó, có 6 chỉ tiêu vượt nghị quyết, gồm: Chuyển đổi cây trồng, thu nhập bình quân đầu người, sản phẩm OCOP (Chương trình mỗi xã một sản phẩm), số bác sĩ trên 10.000 dân, giảm tỷ lệ hộ nghèo… Đây đều là những chỉ tiêu phản ánh cụ thể quá trình phát triển KTXH của địa phương, góp phần nâng cao chất lượng đời sống Nhân dân.",
+        "Cũng theo ông Hùng, hoạt động thương mại - dịch vụ của thị xã có bước phát triển tốt, với các sự kiện hấp dẫn được tổ chức trong năm. Cụ thể, UBND TX. Tịnh Biên đã phối hợp với các ngành liên quan tổ chức Hội chợ Công Thương vùng ĐBSCL với 410 gian hàng của 143 doanh nghiệp tham gia, thu hút 220.000 lượt người tham quan, doanh số bán hàng đạt 14 tỷ đồng. Trong khi đó, Hội chợ mua sắm và ẩm thực hàng Việt Nam - Thái Lan và Ngày hội bánh dân gian với 300 gian hàng, thu hút 80.000 lượt khách, doanh số bán hàng đạt 12,3 tỷ đồng."
+      ],
+      "image": [
+        "https://baoangiang.com.vn/image/fckeditor/upload/2023/20231122/images/CH%C3%99A-V%E1%BA%A0N-LINH.jpg"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "moi",
+      "path": "https://cdnmedia.baotintuc.vn/Upload/DMDnZyELa7xUDTdLsa19w/files/2023/11/2211/nghe-an-221123.jpg",
+      "name": "Bắt giữ các đối tượng buôn bán pháo lậu",
+      "content": [
+        "Tại Nghệ An, Phòng Cảnh sát hình sự, Công an tỉnh Nghệ An chủ trì, phối hợp với các đơn vị liên quan vừa triệt phá đường dây buôn bán, vận chuyển, tàng trữ pháo nổ số lượng lớn từ nước ngoài vào Việt Nam, bắt giữ thành công 5 đối tượng, thu giữ hơn 4 tạ pháo.",
+        "Tại Tây Ninh, ngày 22/11, Bộ đội Biên phòng tỉnh Tây Ninh cho biết, đơn vị vừa chủ trì phối hợp với Phòng Cảnh sát quản lý hành chính và trật tự xã hội Công an tỉnh Tây Ninh, Công an huyện Dương Minh Châu, Công an huyện Tân Châu và Đoàn Đặc nhiệm Phòng chống ma túy và tội phạm miền Nam thuộc Cục Phòng chống ma túy và tội phạm Bộ đội Biên phòng (Đoàn 3) triệt phá thành công chuyên án số TN1023p với đường dây vận chuyển pháo, tàng trữ pháo trái phép quy mô lớn vào rạng sáng cùng ngày.",
+        "Bước đầu, Kiệt khai nhận lúc 1 giờ 16 phút sáng 22/11, Kiệt nhận được điện thoại của một người tên đàn ông (chưa rõ lai lịch) trên địa bàn xã Tân Hà, huyện Tân Châu kêu lên khu vực ấp Tân Lâm, xã Tân Hà, huyện Tân Châu (cách biên giới Việt Nam - Campuchia khoảng 2 km) nhận pháo và chở đi giao cho người nhận ở tỉnh Bà Rịa - Vũng Tàu với số tiền công 3 triệu đồng."
+      ],
+      "image": [
+        "https://cdnmedia.baotintuc.vn/Upload/DMDnZyELa7xUDTdLsa19w/files/2023/11/2211/nghe-an-221123.jpg",
+        "https://cdnmedia.baotintuc.vn/Upload/DMDnZyELa7xUDTdLsa19w/files/2023/11/2211/nghe-an1-221123.jpg",
+        "https://cdnmedia.baotintuc.vn/Upload/DMDnZyELa7xUDTdLsa19w/files/2023/11/2211/tay-ninh-221123.jpg"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "moi",
+      "path": "https://photo-cms-anninhthudo.epicdn.me/w660/Uploaded/2023/yrfjpyefjpy/2023_11_22/tau-san-bay-my2-7715-2405.jpg",
+      "name": "Nhóm tác chiến tàu sân bay USS Carl Vinson của Mỹ thăm Hàn Quốc",
+      "content": [
+        "Nhóm tác chiến tàu sân bay USS Carl Vinson đã tiến vào căn cứ hải quân ở Busan, cách Thủ đô Seoul của Hàn Quốc 320 km về phía đông nam, nhằm phô trương sức mạnh quân sự của Mỹ trong bối cảnh căng thẳng gia tăng trên Bán đảo Triều Tiên.",
+        "Chuẩn Đô đốc Hàn Quốc Kim Ji-hoon cho biết: “Chuyến thăm của Nhóm tác chiến tàu sân bay Mỹ thể hiện thế trận phòng thủ phối hợp vững chắc của liên minh Hàn Quốc-Mỹ và quyết tâm sắt đá nhằm đáp trả các mối đe dọa hạt nhân và tên lửa ngày càng gia tăng của Triều Tiên"
+      ],
+      "image": [
+        "https://photo-cms-anninhthudo.epicdn.me/w660/Uploaded/2023/yrfjpyefjpy/2023_11_22/tau-san-bay-my2-7715-2405.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "moi",
+      "path": "https://image.baobackan.com.vn/w1400/Uploaded/2023/pwquljjs/2023_11_22/img-0966-1269.jpg",
+      "name": "Hội nghị phản biện xã hội về Dự thảo “Phương án tuyến phố đi bộ tại thành phố Bắc Kạn”",
+      "content": [
+        "Tại hội nghị, các đại biểu nghe đơn vị tư vấn trình bày về “Phương án tuyến phố đi bộ tại thành phố Bắc Kạn”. Theo đó, với tổng mức đầu tư 42,8 tỷ đồng, Phương án chia làm 2 giai đoạn: Giai đoạn 1 có tổng diện tích khoảng 34.500m2, gồm các khu vực như: Lòng đường, vỉa hè trục đường Thanh Niên và Khu vườn hoa tiếp giáp Sông Cầu. Trong đó, điểm đầu từ ngã tư (đoạn giao với cầu Đội Kỳ); điểm cuối là đoạn giao với đường Võ Nguyên Giáp (ngã tư đèn xanh đỏ xuống đường ngầm); Khu vực cầu Đội Kỳ (ngã tư cầu giao với đường Thanh Niên); phần đường ngã tư cầu giao với đường Thanh Niên và đoạn đường từ đầu cầu đến đầu sân Nhà văn hóa tỉnh.",
+        "Đa số các thành viên trong Ban tư vấn phản biện xã hội cơ bản nhất trí về sự cần thiết và Dự thảo “Phương án tuyến phố đi bộ tại thành phố Bắc Kạn”. Đồng thời mong muốn phương án triển khai thực hiện phù hợp với tình hình thực tế của địa phương, tiết kiệm, hiệu quả, đảm bảo mỹ quan đô thị, an ninh trật tự, tạo điều kiện thuận lợi cho người dân và thu hút du khách, tạo điểm nhấn, từng bước xây dựng thành phố Bắc Kạn trở thành đô thị văn minh, hiện đại.",
+        "Kết thúc hội nghị, đồng chí Hoàng Bắc Hà, Phó Bí thư Thành ủy, Chủ tịch UBND thành phố Bắc Kạn tiếp thu ý kiến đóng góp của các đại biểu và giải đáp một số ý kiến của tổ tư vấn. Đồng chí lưu ý để Phương án tuyến phố đi bộ tại thành phố Bắc Kạn sớm đi vào triển khai xây dựng cần nhận được sự đồng thuận, ủng hộ cao của người dân trong vùng quy hoạch dự án./."
+      ],
+      "image": [
+        "https://image.baobackan.com.vn/w1400/Uploaded/2023/pwquljjs/2023_11_22/img-0966-1269.jpg",
+        "https://image.baobackan.com.vn/w1400/Uploaded/2023/pwquljjs/2023_11_22/img-0972-3113.jpg"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "moi",
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_106_47607803/185ab38aa0c6499810d7.jpg.webp",
+      "name": "Đại diện Việt Nam mặc trang phục Nữ hoàng Ai Cập tại Hoa hậu Liên lục địa 2023",
+      "content": [
+        "Lê Nguyễn Ngọc Hằng đăng quang ngôi vị Á hậu 2 tại cuộc thi Hoa hậu Việt Nam 2022. Ở tuổi 20, người đẹp này sở hữu nhiều thành tích thể thao và học lực đáng nể. Hiện cô theo học chuyên ngành Kinh doanh quốc tế của Đại học Western Sydney và sử dụng thông thạo tiếng Anh, ngoài ra còn ghi điểm với nhiều tài năng như: hát, nhảy, đánh đàn, võ thuật. Đặc biệt, cô duy trì thói quen ăn chay trường từ năm 2020 vì cho rằng ăn chay tốt cho sức khỏe và giúp bảo vệ môi trường.",
+        "Mới đây, trong lần chia sẻ về quá trình chuẩn bị hành trang đi thi Hoa hậu Liên lục địa 2023, Ngọc Hằng tiết lộ, cô nhận được sự đồng hành từ nhà thiết kế tài năng Phạm Sỹ Toàn trong việc hỗ trợ cô lên ý tưởng về các bộ trang phục dự thi. Trong đó, hiểu rõ các ưu điểm về ngoại hình cũng như những hạn chế trong phong cách của cô, nhà thiết kế đã lên 2 ý tưởng về trang phục dạ hội để cô có thể chọn mặc trong đêm chung kết cuộc thi. Bộ đầu tiên có gam màu vàng chủ đạo, lấy cảm hứng từ vẻ đẹp quyền lực và nữ tính của nhân vật nữ hoàng Ai Cập. Còn bộ thứ hai được lấy ý tưởng từ bầu trời đêm ở sa mạc Ai Cập tạo nên một sự kết hợp độc đáo.",
+        "Về phía đơn vị giữ bản quyền cử thí sinh đại diện Việt Nam thi Hoa hậu Liên lục địa 2023, đại diện đơn vị này chia sẻ, Á hậu 2 Hoa hậu Việt Nam 2022 được chọn cho lần đấm chuông xứ người sắp tới là bởi ở cô hội tụ được các tiêu chí cần thiết như có gương mặt đẹp, hình thể chuẩn, trình độ ngoại ngữ tốt, có tài năng ca hát và tính cách năng động, trẻ trung, hiện đại."
+      ],
+      "image": [
+        "https://photo-cms-anninhthudo.epicdn.me/w660/Uploaded/2023/ipjoohb/2023_11_22/1fc76e4a-487c-4ba7-adf5-3bba99476b17-2082-7503.jpeg",
+        "https://photo-cms-anninhthudo.epicdn.me/w660/Uploaded/2023/ipjoohb/2023_11_22/evening-gown-2-7315-4540.jpg",
+        "https://photo-cms-anninhthudo.epicdn.me/w660/Uploaded/2023/ipjoohb/2023_11_22/ngoc-hang-11-7658-7431.jpg"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "moi",
+      "path": "https://imagev3.vietnamplus.vn/w820/Uploaded/2023/tpuoaob/2023_11_22/vietnamunesco-6898.jpg.webp",
+      "name": "Việt Nam trúng cử là thành viên Ủy ban Di sản Thế giới nhiệm kỳ 2023-2027",
+      "content": [
+        "Ngày 22/11, tại Thủ đô Paris, Cộng hòa Pháp, trong khuôn khổ Kỳ họp Đại hội đồng lần thứ 24 các quốc gia thành viên Công ước Bảo vệ Di sản Văn hóa và Thiên nhiên Thế giới (Công ước Di sản Thế giới), Việt Nam đã trúng cử trở thành thành viên của Ủy ban Di sản Thế giới nhiệm kỳ 2023-2027.",
+        "Đánh giá về kết quả này, Thứ trưởng Bộ Ngoại giao Hà Kim Ngọc, Chủ tịch Ủy ban Quốc gia UNESCO Việt Nam, Trưởng đoàn Việt Nam tham dự Kỳ họp cho hay đây là lần thứ 2 chúng ta đảm nhận vai trò tại cơ quan điều hành then chốt nhất về văn hóa của UNESCO.",
+        "Việc trúng cử với số phiếu cao cũng thể hiện uy tín của Việt Nam trên trường quốc tế, sự tin tưởng, ủng hộ của cộng đồng quốc tế với khả năng đóng góp và năng lực điều hành của chúng ta tại các thể chế đa phương toàn cầu; ghi nhận đóng góp thiết thực của Việt Nam trong quan hệ với UNESCO, trong gìn giữ, bảo tồn, phát huy giá trị di sản ở Việt Nam, trên thế giới."
+      ],
+      "image": [
+        "https://imagev3.vietnamplus.vn/w820/Uploaded/2023/tpuoaob/2023_11_22/vietnamunesco-6898.jpg.webp",
+        "https://imagev3.vietnamplus.vn/Uploaded/2023/tpuoaob/2023_11_22/unesco2-4708.jpg.webp",
+        "https://imagev3.vietnamplus.vn/Uploaded/2023/tpuoaob/2023_11_22/unesco1-5621.jpg.webp"
+      ]
+    },
+    {
+      "id": 21,
       "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_22_294_47597638/0e5f64c7768b9fd5c69a.jpg.webp",
       "name": "Ngồi Hỏa Xa Cafe, lãng mạn ngắm tàu chạy qua cầu Long Biên trăm tuổi",
       "type": "tonghop"
     },
     {
-      "id": 26,
+      "id": 22,
       "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_21_465_47596476/9622bd94afd846861fc9.jpg.webp",
       "name": "Thơ mộng đôi mắt Pleiku",
       "type": "tonghop"
     },
     {
-      "id": 27,
+      "id": 23,
       "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_19_465_47570408/bf4bd6d0c69c2fc2768d.jpg.webp",
       "name": "Trên đỉnh Phượng Hoàng ‘mùa cỏ cháy’",
       "type": "tonghop"
     },
     {
-      "id": 28,
+      "id": 24,
       "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_18_442_47562624/a5ec7ee969a580fbd9b4.jpg.webp",
       "name": "Đẹp nao lòng mùa cây thay lá",
       "type": "tonghop"
     },
     {
-      "id": 29,
+      "id": 25,
       "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_17_603_47551715/784f2e8039ccd09289dd.jpg.webp",
       "name": "Chạm mùa lúa chín",
       "type": "tonghop"
     },
     {
-      "id": 30,
+      "id": 26,
       "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_16_585_47550537/d7be2b503c1cd5428c0d.jpg.webp",
       "name": "Những cung đường Tây Bắc!",
       "type": "tonghop"
     },
-
     {
-      "id": 31,
+      "id": 27,
       "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_423_47607485/02baf972ea3e03605a2f.jpg.webp",
       "name": "Chùm ảnh loạt trận 16h00 chiều 22-11",
       "type": "sport"
     },
     {
-      "id": 32,
+      "id": 28,
       "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_106_47607262/62bb0a7f1933f06da922.jpg.webp",
       "name": "Chùm ảnh loạt trận 14h00 chiều 22-11",
       "type": "sport"
     },
     {
-      "id": 33,
+      "id": 29,
       "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_23_47607175/ef3c01f912b5fbeba2a4.jpg.webp",
       "name": "11 nghìn VĐV dự giải chạy đêm Hà Nội 2023",
       "type": "sport"
     },
     {
-      "id": 34,
+      "id": 30,
       "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_106_47606867/bbe3ed20fe6c17324e7d.jpg.webp",
       "name": "Lịch thi đấu vòng 1/16",
       "type": "sport"
     },
     {
-      "id": 35,
+      "id": 31,
       "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_600_47607371/250d44c7578bbed5e79a.jpg.webp",
       "name": "Bản tin Thể thao | 22/11/2023",
       "type": "sport"
     },
     {
-      "id": 36,
+      "id": 32,
       "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_83_47606573/b973218c32c0db9e82d1.jpg.webp",
       "name": "Đội tuyển Việt Nam tiếp tục bị trừ điểm trên bảng xếp hạng FIFA",
       "type": "sport"
