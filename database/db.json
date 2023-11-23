@@ -1,115 +1,198 @@
 {
-    "users": [
-      {
-        "email": "phuvan@gmail.com",
-        "password": "123",
-        "id": "1",
-        "img": "https://image-us.24h.com.vn/upload/2-2023/images/2023-06-06/kim5_1-1686027959-673-width740height480.jpg",
-        "username": "phuvan"
-      },
-      {
-        "email": "tuankiet@gmail.com",
-        "password": "123",
-        "id": "2",
-        "img": "https://image-us.24h.com.vn/upload/2-2023/images/2023-06-06/kim5_1-1686027959-673-width740height480.jpg",
-        "username": "tuankiet"
-      },
-      {
-        "email": "thuylinh@gmail.com",
-        "password": "456",
-        "id": "3",
-        "img": "https://example.com/newuser.jpg",
-        "username": "thuylinh"
-      }
-    ],
-    "articles": [
-      {
-        "id": 1,
-        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_329_47566837/de1254c7448badd5f49a.jpg.webp",
-        "name": "Nghệ sĩ Thương Tín làm video nói rõ lùm xùm từ thiện với NSƯT Trịnh Kim Chi",
-        "content":["Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
+  "users": [
+    {
+      "email": "phuvan@gmail.com",
+      "password": "123",
+      "id": "1",
+      "img": "https://image-us.24h.com.vn/upload/2-2023/images/2023-06-06/kim5_1-1686027959-673-width740height480.jpg",
+      "username": "phuvan"
+    },
+    {
+      "email": "tuankiet@gmail.com",
+      "password": "123",
+      "id": "2",
+      "img": "https://image-us.24h.com.vn/upload/2-2023/images/2023-06-06/kim5_1-1686027959-673-width740height480.jpg",
+      "username": "tuankiet"
+    },
+    {
+      "email": "thuylinh@gmail.com",
+      "password": "456",
+      "id": "3",
+      "img": "https://example.com/newuser.jpg",
+      "username": "thuylinh"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_329_47566837/de1254c7448badd5f49a.jpg.webp",
+      "name": "Nghệ sĩ Thương Tín làm video nói rõ lùm xùm từ thiện với NSƯT Trịnh Kim Chi",
+      "content": [
+        "Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
 
         "Về lý do nhắc lại ồn ào này, nhạc sĩ Tô Hiếu cho biết đây là việc nghệ sĩ Thương Tín nên làm vì 'đó là số tiền rất lớn, nhiều người lại nghĩ không đúng về anh ấy vì những ồn ào trong quá khứ'.Nhạc sĩ Tô Hiếu cho biết thêm, trong video này, nghệ sĩ Thương Tín cũng sẽ kể về hơn 100 bộ phim mà nam tài tử đã tham gia để khán giả hiểu một cách tường tận.",
         "Mỗi lần đi ngang những nơi anh ấy từng quay phim, anh ấy đều bồi hồi kể lại cho tôi các khoảnh khắc đáng nhớ. Tôi sợ sau này Thương Tín không còn minh mẫn nên muốn làm video để lưu lại những kỷ niệm vui buồn hoặc khó khăn khi đóng phim của anh ấy"
       ],
-        "image": [
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/1932a2e7b2ab5bf502ba.jpg.webp", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/6169dfbccff026ae7fe1.jpg.webp",
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/d543579647daae84f7cb.jpg.webp"
-        ]
+      "image": [
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/1932a2e7b2ab5bf502ba.jpg.webp",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/6169dfbccff026ae7fe1.jpg.webp",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/d543579647daae84f7cb.jpg.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_91_47566363/56caa402b44e5d10045f.jpg.webp",
+      "name": "Chồng hay ra khỏi nhà vào buổi tối, vợ âm thầm bám theo rồi bật khóc với cảnh tượng trước mắt",
+      "content": [
+        "Tôi năm nay 34 tuổi, kết hôn được 6 năm. Chồng hơn tôi 4 tuổi, anh ấy là người chín chắn, luôn lo toan cho vợ con. Trong đời sống hôn nhân, tôi và chồng từ trước khi cưới đã thỏa thuận với nhau một nguyên tắc đó là việc to hay nhỏ đều phải chia sẻ với nhau. Giữa chúng tôi không có khoảng cách, không phân biệt chuyện kiếm tiền cao thấp, cùng nhau san sẻ mọi chuyện. Tôi là người chăm sóc chồng con, còn anh ấy lo về kinh tế.",
 
-      },
-      {
-        "id": 2,
-        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_91_47566363/56caa402b44e5d10045f.jpg.webp",
-        "name": "Chồng hay ra khỏi nhà vào buổi tối, vợ âm thầm bám theo rồi bật khóc với cảnh tượng trước mắt",
-        "content":["Tôi năm nay 34 tuổi, kết hôn được 6 năm. Chồng hơn tôi 4 tuổi, anh ấy là người chín chắn, luôn lo toan cho vợ con. Trong đời sống hôn nhân, tôi và chồng từ trước khi cưới đã thỏa thuận với nhau một nguyên tắc đó là việc to hay nhỏ đều phải chia sẻ với nhau. Giữa chúng tôi không có khoảng cách, không phân biệt chuyện kiếm tiền cao thấp, cùng nhau san sẻ mọi chuyện. Tôi là người chăm sóc chồng con, còn anh ấy lo về kinh tế.",
-
-        "Về lý do nhắc lại ồn ào này, nhạc sĩ Tô Hiếu cho biết đây là việc nghệ sĩ Thương Tín nên làm vì 'đó là số tiền rất lớn, nhiều người lại nghĩ không đúng về anh ấy vì những ồn ào trong quá khứ'.Nhạc sĩ Tô Hiếu cho biết thêm, trong video này, nghệ sĩ Thương Tín cũng sẽ kể về hơn 100 bộ phim mà nam tài tử đã tham gia để khán giả hiểu một cách tường tận.",
-        "Mỗi lần đi ngang những nơi anh ấy từng quay phim, anh ấy đều bồi hồi kể lại cho tôi các khoảnh khắc đáng nhớ. Tôi sợ sau này Thương Tín không còn minh mẫn nên muốn làm video để lưu lại những kỷ niệm vui buồn hoặc khó khăn khi đóng phim của anh ấy"
+        "Tôi choáng váng, chưa hiểu chuyện gì đang xảy ra, thì xuất hiện người phụ nữ trẻ hơn tôi khoảng 5 - 6 tuổi. Cô ta tìm cách chạy ra khỏi cửa, trong khi chồng cố ôm chặt tôi để cản đường. Bất lực nhìn nhân tình của chồng chạy thoát, tôi chỉ biết khóc vì sốc. Mọi thứ đến quá nhanh, quá sức tưởng tượng của tôi. Chồng đã phũ phàng phản bội vợ con khi mà gia đình đang êm ấm, hạnh phúc.",
+        "Chồng tôi có người bên ngoài, tôi đau đớn trong dằn vặt, căm ghét người chồng phản bội. Mặc cho chồng van xin, hứa hẹn sẽ không bao giờ tái phạm… Tôi vẫn muốn nộp đơn ra tòa để ly hôn. Những ngày qua, chồng tôi tỏ ra ăn năn, hối lối. Anh ta còn gọi điện nhờ vả bố mẹ vợ, anh chị bên vợ tác động để tôi tha thứ. Điều này càng làm tôi thêm suy sụp, tôi không muốn chuyện của mình làm ảnh hưởng đến những người thân."
       ],
-        "image": [
-          "https://giadinh.mediacdn.vn/thumb_w/640/296230595582509056/2022/7/16/ly-hon-2-nam-nhung-hanh-dong-nay-cua-vo-cu-khien-toi-an-han-vo-cung-1657963603604-1657963603909889577402.jpeg", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/6169dfbccff026ae7fe1.jpg.webp",
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/d543579647daae84f7cb.jpg.webp", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/b01c35c92585ccdb9594.jpg.webp"
-        ]
-      },
-      {
-        "id": 3,
-        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_329_47566184/b4e38c279c6b75352c7a.jpg.webp",
-        "name": "Cặp đôi Vbiz tổ chức lễ ăn hỏi hôm nay: Ninh Dương Lan Ngọc diện áo dài",
-        "content":["Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
+      "image": [
+        "https://giadinh.mediacdn.vn/thumb_w/640/296230595582509056/2022/7/16/ly-hon-2-nam-nhung-hanh-dong-nay-cua-vo-cu-khien-toi-an-han-vo-cung-1657963603604-1657963603909889577402.jpeg",
+        "https://giadinh.mediacdn.vn/thumb_w/640/296230595582509056/2023/3/5/bo-chong-16780104200921711804886.jpg"
+        
+      ]
+    },
+    {
+      "id": 3,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_329_47566184/b4e38c279c6b75352c7a.jpg.webp",
+      "name": "Cặp đôi Vbiz tổ chức lễ ăn hỏi hôm nay: Ninh Dương Lan Ngọc diện áo dài",
+      "content": [
+        "Trong lễ ăn hỏi sáng nay, Ninh Dương Lan Ngọc - Thùy Anh là những người bạn thân của cô dâu Phương Lan cũng có mặt, diện áo dài xanh truyền thống. Ngoài ra, sự có mặt của MisThy với nhan sắc ngày một thăng hạng cũng khiến dân tình trầm trồ.",
 
-        "Về lý do nhắc lại ồn ào này, nhạc sĩ Tô Hiếu cho biết đây là việc nghệ sĩ Thương Tín nên làm vì 'đó là số tiền rất lớn, nhiều người lại nghĩ không đúng về anh ấy vì những ồn ào trong quá khứ'.Nhạc sĩ Tô Hiếu cho biết thêm, trong video này, nghệ sĩ Thương Tín cũng sẽ kể về hơn 100 bộ phim mà nam tài tử đã tham gia để khán giả hiểu một cách tường tận.",
-        "Mỗi lần đi ngang những nơi anh ấy từng quay phim, anh ấy đều bồi hồi kể lại cho tôi các khoảnh khắc đáng nhớ. Tôi sợ sau này Thương Tín không còn minh mẫn nên muốn làm video để lưu lại những kỷ niệm vui buồn hoặc khó khăn khi đóng phim của anh ấy"
+        "Được biết sau lễ ăn hỏi hôm nay, lễ cưới của Phương Lan và Phan Đạt sẽ được diễn ra vào chiều 20/11 tại một nhà hàng ở TP HCM, hứa hẹn quy tụ nhiều sao khủng Vbiz như: Thu Trang, Tiến Luật, Puka, Gin Tuấn Kiệt, Khả Như, Huỳnh Phương,...",
+        "Phương Lan và Phan Đạt có 5 năm hẹn hò trước khi về chung nhà. Cả hai khiến nhiều người ngưỡng mộ khi Phan Đạt quyết định từ bỏ mọi thứ để đứng phía sau, giúp sức và ủng hộ con đường nghệ thuật của Phương Lan. Trong một talkshow, Phương Lan từng chia sẻ: 'Nếu chọn sự nghiệp thì tôi sẽ không có Phan Đạt. Nhưng nếu chọn Phan Đạt thì tôi có cả hai, ngại gì mà mình không chọn Đạt. Người đàn ông chịu đứng sau để hỗ trợ mình mọi thứ trong công việc thì không dễ dàng gì.'"
       ],
-        "image": [
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/1932a2e7b2ab5bf502ba.jpg.webp", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/6169dfbccff026ae7fe1.jpg.webp",
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/d543579647daae84f7cb.jpg.webp", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/b01c35c92585ccdb9594.jpg.webp"
-        ]
-      },
-      {
-        "id": 4,
-        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_115_47595743/ef6dcdb2dffe36a06fef.jpg.webp",
-        "name": "Mạnh tay xử lý tham nhũng, tiêu cực trong hoạt động tư pháp",
-        "content":["Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
+      "image": [
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566184/96ff9a758a3963673a28.jpg.webp",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566184/50555edf4e93a7cdfe82.jpg.webp",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566184/8e6281e891a478fa21b5.jpg.webp",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566184/91389bb28bfe62a03bef.jpg.webp"
+      ]
+    },
+    {
+      "id": 4,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_115_47595743/ef6dcdb2dffe36a06fef.jpg.webp",
+      "name": "Mạnh tay xử lý tham nhũng, tiêu cực trong hoạt động tư pháp",
+      "content": [
+        "Chiều 21/11, tiếp tục chương trình Kỳ họp thứ 6 (đợt 2), Quốc hội thảo luận ở hội trường về các báo cáo công tác của Chánh án Tòa án nhân dân tối cao, Viện trưởng Viện Kiểm sát nhân dân tối cao; công tác phòng, chống tội phạm và vi phạm pháp luật; công tác thi hành án; công tác phòng, chống tham nhũng năm 2023.,Qua thảo luận, các đại biểu Quốc hội bày tỏ đồng tình và đánh giá cao với các báo cáo; cho rằng, khối lượng công việc của các ngành Công an, Tòa án nhân dân, Viện Kiểm sát nhân dân, Thanh tra Chính phủ và Bộ Tư pháp đều tăng cao, nhưng kết quả thực hiện đều đạt và vượt các chỉ tiêu Quốc hội đề ra, cho thấy sự nỗ lực rất lớn của các ngành.Thương Tín không còn minh mẫn nên muốn làm video để lưu lại những kỷ niệm vui buồn hoặc khó khăn khi đóng phim của anh ấy",
+        "Tình hình an ninh, trật tự, an toàn xã hội được giữ vững, đảm bảo môi trường thuận lợi cho phát triển kinh tế - xã hội. Nhiều lỗ hổng trong công tác quản lý xã hội, quản lý kinh tế được phát hiện, sửa chữa, ý thức chấp hành pháp luật của toàn xã hội được nâng cao, nhân dân tin tưởng vào công tác đấu tranh phòng, chống tội phạm.",
+        "Đánh giá công tác đấu tranh phòng, chống tham nhũng, tiêu cực đang được Đảng, Nhà nước quan tâm, đã đạt được những kết quả nhất định, một số đại biểu nhấn mạnh đến công tác đấu tranh với tội phạm tham nhũng, tiêu cực ngay trong hoạt động tư pháp, đang là vấn đề được Quốc hội, cử tri, dư luận xã hội rất quan tâm",
+        "Chánh án Tòa án nhân dân tối cao Nguyễn Hòa Bình cho biết, đa số ý kiến của đại biểu Quốc hội đồng ý với các báo cáo, đánh giá cao nỗ lực của các cơ quan, khẳng định những kết quả đã đạt được trong năm 2023. Qua đó, tình hình vi phạm pháp luật được kiềm chế, công lý được đảm bảo, môi trường đầu tư thuận lợi, thông thoáng, cuộc sống thanh bình của nhân dân được giữ gìn."
+      ],
+      "image": [
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_21_294_47594941/648f5c454e09a757fe18.jpg",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_21_294_47594941/5ba7656d77219e7fc730.jpg.webp",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_21_294_47594941/3a1605dc1790fecea781.jpg.webp",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_21_294_47594941/86fabb30a97c4022196d.jpg.webp"
+      ]
+    },
+    {
+      "id": 5,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_3_47568077/8dd561787134986ac125.jpg.webp",
+      "name": "HÀNG LOẠT CÔNG TY BẢO HIỂM ĐÂM ĐƠN KIỆN HYUNDAI, KIA",
+      "content": [
+        "Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
 
-        "Về lý do nhắc lại ồn ào này, nhạc sĩ Tô Hiếu cho biết đây là việc nghệ sĩ Thương Tín nên làm vì 'đó là số tiền rất lớn, nhiều người lại nghĩ không đúng về anh ấy vì những ồn ào trong quá khứ'.Nhạc sĩ Tô Hiếu cho biết thêm, trong video này, nghệ sĩ Thương Tín cũng sẽ kể về hơn 100 bộ phim mà nam tài tử đã tham gia để khán giả hiểu một cách tường tận.",
-        "Mỗi lần đi ngang những nơi anh ấy từng quay phim, anh ấy đều bồi hồi kể lại cho tôi các khoảnh khắc đáng nhớ. Tôi sợ sau này Thương Tín không còn minh mẫn nên muốn làm video để lưu lại những kỷ niệm vui buồn hoặc khó khăn khi đóng phim của anh ấy"
+        "Huyndai cho biết rằng họ thất vọng với quyết định này và mong chờ một phán quyết cuối cùng. Hãng cũng cho biết các đại lý đã cài đặt phần mềm chống trộm trên hơn 1 triệu xe."
+    
       ],
-        "image": [
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/1932a2e7b2ab5bf502ba.jpg.webp", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/6169dfbccff026ae7fe1.jpg.webp",
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/d543579647daae84f7cb.jpg.webp", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/b01c35c92585ccdb9594.jpg.webp"
-        ]
-      },
-      {
-        "id": 5,
-        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_18_3_47568077/8dd561787134986ac125.jpg.webp",
-        "name": "HÀNG LOẠT CÔNG TY BẢO HIỂM ĐÂM ĐƠN KIỆN HYUNDAI, KIA",
-        "content":["Dù sở hữu sự nghiệp nghệ thuật đồ sộ, tuổi xế chiều của nghệ sĩ Thương Tín lại khiến khán giả xót xa. Cách đây chưa lâu, ồn ào liên quan đến số tiền từ thiện ủng hộ nghệ sĩ Thương Tín được NSƯT Trịnh Kim Chi kêu gọi đã khiến dân tình xôn xao.Mới đây, nhạc sĩ Tô Hiếu cho biết, trong tháng 12 tới đây, nghệ sĩ Thương Tín sẽ cho ra mắt một video nói về số tiền từ thiện hàng trăm triệu đồng mà tài tử đã nhận từ mạnh thường quân, đồng thời làm sáng tỏ mọi chuyện xảy ra với NSƯT Trịnh Kim Chi.",
+      "image": [
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_3_47568077/cc28438553c9ba97e3d8.jpg",
+        "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_3_47568077/ba982c353c79d5278c68.jpg.webp"
+   
+      ]
+    },
+    {
+      "id": 6,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_91_47594985/a55f249636dadf8486cb.jpg.webp",
+      "name": "Diễn viên Việt nổi tiếng, đẹp trai yêu say đắm mẹ đơn thân hơn 6 tuổi: Dùng nhiều 'mưu kế' mới tán đổ"
+    },
+    {
+      "id": 7,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_294_47595008/896f8aa698ea71b428fb.jpg.webp",
+      "name": "Những công việc được trả lương cao nhất trong năm 2023"
+    },
+    {
+      "id": 8,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_207_47596081/ca7d14d6069aefc4b68b.jpg.webp",
+      "name": "Công an Hà Nội truy nã đối tượng Phùng Thị Tuyến"
+    },
 
-        "Về lý do nhắc lại ồn ào này, nhạc sĩ Tô Hiếu cho biết đây là việc nghệ sĩ Thương Tín nên làm vì 'đó là số tiền rất lớn, nhiều người lại nghĩ không đúng về anh ấy vì những ồn ào trong quá khứ'.Nhạc sĩ Tô Hiếu cho biết thêm, trong video này, nghệ sĩ Thương Tín cũng sẽ kể về hơn 100 bộ phim mà nam tài tử đã tham gia để khán giả hiểu một cách tường tận.",
-        "Mỗi lần đi ngang những nơi anh ấy từng quay phim, anh ấy đều bồi hồi kể lại cho tôi các khoảnh khắc đáng nhớ. Tôi sợ sau này Thương Tín không còn minh mẫn nên muốn làm video để lưu lại những kỷ niệm vui buồn hoặc khó khăn khi đóng phim của anh ấy"
-      ],
-        "image": [
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/1932a2e7b2ab5bf502ba.jpg.webp", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/6169dfbccff026ae7fe1.jpg.webp",
-          "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/d543579647daae84f7cb.jpg.webp", "https://photo-baomoi.bmcdn.me/w700_r1/2023_11_18_329_47566837/b01c35c92585ccdb9594.jpg.webp"
-        ]
-      },
-      {
-        "id": 6,
-        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_91_47594985/a55f249636dadf8486cb.jpg.webp",
-        "name": "Diễn viên Việt nổi tiếng, đẹp trai yêu say đắm mẹ đơn thân hơn 6 tuổi: Dùng nhiều 'mưu kế' mới tán đổ"
-      },
-      {
-        "id": 7,
-        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_294_47595008/896f8aa698ea71b428fb.jpg.webp",
-        "name": "Những công việc được trả lương cao nhất trong năm 2023"
-      },
-      {
-        "id": 8,
-        "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_21_207_47596081/ca7d14d6069aefc4b68b.jpg.webp",
-        "name": "Công an Hà Nội truy nã đối tượng Phùng Thị Tuyến"
-      }
-      
-    ]
-  }
-  
+    {
+      "id": 25,
+      "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_22_294_47597638/0e5f64c7768b9fd5c69a.jpg.webp",
+      "name": "Ngồi Hỏa Xa Cafe, lãng mạn ngắm tàu chạy qua cầu Long Biên trăm tuổi",
+      "type": "tonghop"
+    },
+    {
+      "id": 26,
+      "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_21_465_47596476/9622bd94afd846861fc9.jpg.webp",
+      "name": "Thơ mộng đôi mắt Pleiku",
+      "type": "tonghop"
+    },
+    {
+      "id": 27,
+      "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_19_465_47570408/bf4bd6d0c69c2fc2768d.jpg.webp",
+      "name": "Trên đỉnh Phượng Hoàng ‘mùa cỏ cháy’",
+      "type": "tonghop"
+    },
+    {
+      "id": 28,
+      "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_18_442_47562624/a5ec7ee969a580fbd9b4.jpg.webp",
+      "name": "Đẹp nao lòng mùa cây thay lá",
+      "type": "tonghop"
+    },
+    {
+      "id": 29,
+      "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_17_603_47551715/784f2e8039ccd09289dd.jpg.webp",
+      "name": "Chạm mùa lúa chín",
+      "type": "tonghop"
+    },
+    {
+      "id": 30,
+      "path": "https://photo-baomoi.bmcdn.me/w300_r3x2/2023_11_16_585_47550537/d7be2b503c1cd5428c0d.jpg.webp",
+      "name": "Những cung đường Tây Bắc!",
+      "type": "tonghop"
+    },
+
+    {
+      "id": 31,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_423_47607485/02baf972ea3e03605a2f.jpg.webp",
+      "name": "Chùm ảnh loạt trận 16h00 chiều 22-11",
+      "type": "sport"
+    },
+    {
+      "id": 32,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_106_47607262/62bb0a7f1933f06da922.jpg.webp",
+      "name": "Chùm ảnh loạt trận 14h00 chiều 22-11",
+      "type": "sport"
+    },
+    {
+      "id": 33,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_23_47607175/ef3c01f912b5fbeba2a4.jpg.webp",
+      "name": "11 nghìn VĐV dự giải chạy đêm Hà Nội 2023",
+      "type": "sport"
+    },
+    {
+      "id": 34,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_106_47606867/bbe3ed20fe6c17324e7d.jpg.webp",
+      "name": "Lịch thi đấu vòng 1/16",
+      "type": "sport"
+    },
+    {
+      "id": 35,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_600_47607371/250d44c7578bbed5e79a.jpg.webp",
+      "name": "Bản tin Thể thao | 22/11/2023",
+      "type": "sport"
+    },
+    {
+      "id": 36,
+      "path": "https://photo-baomoi.bmcdn.me/w250_r3x2/2023_11_22_83_47606573/b973218c32c0db9e82d1.jpg.webp",
+      "name": "Đội tuyển Việt Nam tiếp tục bị trừ điểm trên bảng xếp hạng FIFA",
+      "type": "sport"
+    }
+  ]
+}
