@@ -8,67 +8,51 @@ import {
   FlatList,
   ScrollView,
 } from "react-native";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const dataDanguocQuanTam = [
-  {
-    link: "https://halodalat.vn/wp-content/uploads/2020/06/anh-bia-2.jpg",
-    name: "Chụp ảnh chiều thu trên đồi đà lạt thơ mộng ",
-  },
-  {
-    link: "https://fantasea.vn/wp-content/uploads/2020/04/%C4%90%E1%BB%93i-%C4%90a-Ph%C3%BA.jpg",
-    name: "Cảnh đà lạt vào sáng sớm xinh đẹp",
-  },
-  {
-    link: "https://idalat.vn/blog/wp-content/uploads/sites/2/2020/08/doi-thien-phuc-duc.jpg",
-    name: "top địa điểm chụp ảnh đẹp cho cặp đôi",
-  },
-  {
-    link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNHXcbebLb-ZWmwAeSPovZb66_UzwZgS_rc2cJYsMR4EIHKBv4IKerx3V6iG1gI8_hjk&usqp=CAU",
-    name: "Cặp đôi từng hứa yêu nhau trọn đời đã chia tay sau khi đi chơi đà lạt",
-  },
-  {
-    link: "https://afamilycdn.com/150157425591193600/2020/6/16/dscf1349-1592277999018846826522.jpg",
-    name: "Chân đồi ánh nắng lóe vàng thích hợp chụp ảnh pphong cảnh ",
-  },
-  {
-    link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzfyBzv5Yzu-vlZ8OgFa-sc9LjK9iJKrvDyX_dvORL78NceWrwfBkCGliDE07PCDhmgM&usqp=CAU",
-    name: "Đà lạt mùa hạ xinh đẹp cùng cảnh quan thiên nhiên tươi đẹp",
-  },
-];
-const dataNong24h = [
-  {
-    link: "https://thegioianh.diendandoanhnghiep.vn/wp-content/uploads/2023/03/2-4.jpg",
-    name: "Bờ biển thơ mông của VN là tiên cảnh giữa chốn thiên nhiên hiu quạnh  ",
-  },
-  {
-    link: "https://i.pinimg.com/736x/a7/41/35/a741356a49d4e15ddf4231e130dace8d.jpg",
-    name: "Bờ biển sau khi đã được dọn sạch rác ở vũng Tàu Việt Nam tươi đẹp",
-  },
-  {
-    link: "https://toquoc.mediacdn.vn/Uploaded/myda/2017_07_17/nhungbaibientrentg/100_WCQJ.jpg",
-    name: "Biển xanh cát trắng thích hợp cho các cuộc du lịch dài hạn và không có phố thị sô bồ",
-  },
-  {
-    link: "https://file.vfo.vn/hinh/2016/08/hinh-anh-ve-bien-14.jpg",
-    name: "Top những địa điểm du lịch thicha hợp năm nay cho mọi người có thể lựa chọn tùy ý thích của mình",
-  },
-];
-
-export default function Screen5() {
+export default function Screen5({navigation}) {
+  const [datalist1, setDataList1] = useState([]);
+  const [datalist2, setDataList2] = useState([]);
+  const [datalist, setDataList] = useState([]);
   const [showAll, setShowAll] = useState(false);
   const initialItemsToShow = 3;
-  const itemsToShow = showAll ? dataDanguocQuanTam.length : initialItemsToShow;
+  const itemsToShow = showAll ? datalist.length : initialItemsToShow;
   const [showAll1, setShowAll1] = useState(false);
   const initialItemsToShow1 = 3;
-  const itemsToShow1 = showAll1 ? dataNong24h.length : initialItemsToShow1;
+  const itemsToShow1 = showAll1 ? datalist.length : initialItemsToShow1;
+
+  useEffect(() => {
+    fetch("http://localhost:3000/articles")
+      .then((response) => response.json())
+      .then((json) => {
+        setDataList(json);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+      });
+  }, []);
+
+  useEffect(() => {
+    const nongItems = datalist.filter((item) => item.type === "nong");
+    const shuffledData = datalist.sort(() => Math.random() - 0.5);
+    const half = Math.ceil(shuffledData.length / 2);
+    const firstHalf = shuffledData.slice(0, half);
+    setDataList1(firstHalf);
+    setDataList2(nongItems);
+  }, [datalist]);
 
   return (
     <View style={styles.container}>
-        <View style = {{flex: 1, backgroundImage: "linear-gradient(to right, #5eb4ba, #155380)", alignItems: "center"}}>
-        <Text style = {styles.fontVideo}>Xu hướng</Text>
-    </View>
-        <View style = {styles.listvideo}>
+      <View
+        style={{
+          flex: 1,
+          backgroundImage: "linear-gradient(to right, #5eb4ba, #155380)",
+          alignItems: "center",
+        }}
+      >
+        <Text style={styles.fontVideo}>Xu hướng</Text>
+      </View>
+      <View style={styles.listvideo}>
         <ScrollView nestedScrollEnabled>
           {" "}
           <View
@@ -99,10 +83,19 @@ export default function Screen5() {
           <View style={{ alignItems: "center", marginBottom: 30 }}>
             <ScrollView nestedScrollEnabled>
               <FlatList
-                data={dataDanguocQuanTam.slice(0, itemsToShow)}
+                data={datalist1.slice(0, itemsToShow)}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
-                  <TouchableOpacity>
+                  <TouchableOpacity
+                    onPress={() =>
+                      navigation.navigate("screendocbao", {
+                        articleId: item.id,
+                        name: item.name,
+                        content: item.content,
+                        image: item.image,
+                      })
+                    }
+                  >
                     <View
                       style={{
                         height: 105,
@@ -114,7 +107,7 @@ export default function Screen5() {
                     >
                       <Image
                         style={{ height: 90, width: 160, borderRadius: 9 }}
-                        source={{ uri: item.link }}
+                        source={{ uri: item.path }}
                       />
                       <View
                         style={{
@@ -192,10 +185,19 @@ export default function Screen5() {
           <View style={{ alignItems: "center", marginBottom: 30 }}>
             <ScrollView nestedScrollEnabled>
               <FlatList
-                data={dataNong24h.slice(0, itemsToShow1)}
+                data={datalist2.slice(0, itemsToShow1)}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
-                  <TouchableOpacity>
+                  <TouchableOpacity
+                    onPress={() =>
+                      navigation.navigate("screendocbao", {
+                        articleId: item.id,
+                        name: item.name,
+                        content: item.content,
+                        image: item.image,
+                      })
+                    }
+                  >
                     <View
                       style={{
                         height: 105,
@@ -207,7 +209,7 @@ export default function Screen5() {
                     >
                       <Image
                         style={{ height: 90, width: 160, borderRadius: 9 }}
-                        source={{ uri: item.link }}
+                        source={{ uri: item.path }}
                       />
                       <View
                         style={{
@@ -264,16 +266,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  listvideo:{
+  listvideo: {
     flex: 9,
     alignItems: "center",
-
   },
-  fontVideo:{
+  fontVideo: {
     textAlign: "center",
     fontSize: 20,
     fontWeight: "bold",
     color: "#fff",
-    marginTop:15
-  }
+    marginTop: 15,
+  },
 });
