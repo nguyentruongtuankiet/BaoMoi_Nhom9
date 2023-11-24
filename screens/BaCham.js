@@ -1,60 +1,123 @@
 import * as React from "react";
-import { StyleSheet, View, Text, Pressable } from "react-native";
+import { StyleSheet, View, Text, Pressable, TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
 
 
 
-const BaChm = () => {
-  const navigation = useNavigation();
-
+const BaChm = ({navigation}) => {
+  
+  const handleImagePress = (screenName) => {
+    navigation.navigate(screenName);
+  };
+  
   return (
+    
     <View style = {styles.container}>
     {/* <View style = {{flex: 1}}>
       <Text>dsdsa</Text>
     </View> */}
      <View style = {{flex: 9}}>
-     <Image
+     <TouchableOpacity
+      onPress={() => handleImagePress("Tab2")}
+     >
+       <Image
         style={[styles.baChmItem, styles.chmLayout]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-11.png")}
       />
-      <Image
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab6")}
+     >
+         <Image
         style={[styles.baChmInner, styles.chmChildLayout2]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-17.png")}
       />
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab4")}
+     >
+       
+       <Image
+        style={[styles.rectangleIcon, styles.chmChildLayout2]}
+        contentFit="cover"
+        source={require("../images/chuyenmuc/rectangle-19.png")}
+      />
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab5")}
+     >
       <Image
         style={[styles.rectangleIcon, styles.chmChildLayout2]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-19.png")}
       />
-      <Image
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab4")}
+     >
+        <Image
         style={[styles.baChmChild1, styles.chmChildLayout3]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-16.png")}
       />
-      <Image
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab6")}
+     >
+          <Image
         style={[styles.baChmChild2, styles.chmLayout]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-15.png")}
       />
-      <Image
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab5")}
+     >
+        <Image
         style={[styles.baChmChild3, styles.chmChildLayout1]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-14.png")}
       />
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab8")}
+     >
+        <Image
+        style={[styles.baChmChild4, styles.chmChildLayout2]}
+        contentFit="cover"
+        source={require("../images/chuyenmuc/rectangle-23.png")}
+      />
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab9")}
+     >
+      
       <Image
         style={[styles.baChmChild4, styles.chmChildLayout2]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-23.png")}
       />
-      <Image
+     </TouchableOpacity>
+      <TouchableOpacity
+      onPress={() => handleImagePress("Tab10")}
+     >
+        
+        <Image
         style={[styles.baChmChild5, styles.chmChildLayout2]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-22.png")}
       />
+     </TouchableOpacity>
+    
+   
+      
+    
+  
+  
       <Image
         style={[styles.baChmChild6, styles.chmChildLayout]}
         contentFit="cover"
@@ -70,11 +133,16 @@ const BaChm = () => {
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-18.png")}
       />
-      <Image
+      <TouchableOpacity
+        onPress={() => handleImagePress("Tab3")}
+      >
+          <Image
         style={[styles.baChmChild9, styles.chmChildLayout3]}
         contentFit="cover"
         source={require("../images/chuyenmuc/rectangle-13.png")}
       />
+      </TouchableOpacity>
+    
       <Text style={[styles.choBn, styles.bngTypo]}>Cho bạn</Text>
       <Text style={[styles.xuHng, styles.bngTypo]}>Xu hướng</Text>
       <Text style={[styles.nng, styles.bngTypo]}>Nóng</Text>
@@ -248,22 +316,22 @@ const styles = StyleSheet.create({
     left: 21,
   },
   baChmInner: {
-    left: 184,
+    left: 198,
     height: 99,
     top: 225,
   },
   rectangleIcon: {
     top: 339,
-    left: 184,
+    left: 198,
     height: 99,
   },
   baChmChild1: {
     top: 121,
     height: 89,
-    left: 186,
+    left: 200,
   },
   baChmChild2: {
-    left: 190,
+    left: 204,
   },
   baChmChild3: {
     top: 225,
@@ -280,7 +348,7 @@ const styles = StyleSheet.create({
     left: 21,
   },
   baChmChild7: {
-    left: 186,
+    left: 200,
   },
   baChmChild8: {
     top: 337,
@@ -299,7 +367,7 @@ const styles = StyleSheet.create({
   },
   xuHng: {
     top: 33,
-    left: 216,
+    left: 230,
     width: 107,
     height: 53,
     position: "absolute",
@@ -313,7 +381,7 @@ const styles = StyleSheet.create({
   },
   mi: {
     top: 137,
-    left: 204,
+    left: 218,
     width: 114,
     justifyContent: "center",
     alignItems: "center",
@@ -330,7 +398,7 @@ const styles = StyleSheet.create({
   },
   bngVn: {
     top: 245,
-    left: 205,
+    left: 219,
     width: 120,
     height: 63,
     position: "absolute",
@@ -350,7 +418,7 @@ const styles = StyleSheet.create({
   },
   cL: {
     top: 361,
-    left: 195,
+    left: 209,
     width: 130,
   },
   tnhYu: {
@@ -360,7 +428,7 @@ const styles = StyleSheet.create({
   },
   giiTr: {
     top: 477,
-    left: 215,
+    left: 229,
     width: 108,
     height: 51,
     position: "absolute",
