@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import React, { useState, useEffect } from "react";
 
-export default function Screen5() {
+export default function Screen5({navigation}) {
   const [datalist1, setDataList1] = useState([]);
   const [datalist2, setDataList2] = useState([]);
   const [datalist, setDataList] = useState([]);
@@ -32,22 +32,27 @@ export default function Screen5() {
       });
   }, []);
 
-
   useEffect(() => {
-    const nongItems = datalist.filter(item => item.type === 'nong');
+    const nongItems = datalist.filter((item) => item.type === "nong");
     const shuffledData = datalist.sort(() => Math.random() - 0.5);
     const half = Math.ceil(shuffledData.length / 2);
     const firstHalf = shuffledData.slice(0, half);
     setDataList1(firstHalf);
     setDataList2(nongItems);
-  }, [datalist]); 
+  }, [datalist]);
 
   return (
     <View style={styles.container}>
-        <View style = {{flex: 1, backgroundImage: "linear-gradient(to right, #5eb4ba, #155380)", alignItems: "center"}}>
-        <Text style = {styles.fontVideo}>Xu hướng</Text>
-    </View>
-        <View style = {styles.listvideo}>
+      <View
+        style={{
+          flex: 1,
+          backgroundImage: "linear-gradient(to right, #5eb4ba, #155380)",
+          alignItems: "center",
+        }}
+      >
+        <Text style={styles.fontVideo}>Xu hướng</Text>
+      </View>
+      <View style={styles.listvideo}>
         <ScrollView nestedScrollEnabled>
           {" "}
           <View
@@ -81,7 +86,16 @@ export default function Screen5() {
                 data={datalist1.slice(0, itemsToShow)}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
-                  <TouchableOpacity>
+                  <TouchableOpacity
+                    onPress={() =>
+                      navigation.navigate("screendocbao", {
+                        articleId: item.id,
+                        name: item.name,
+                        content: item.content,
+                        image: item.image,
+                      })
+                    }
+                  >
                     <View
                       style={{
                         height: 105,
@@ -174,7 +188,16 @@ export default function Screen5() {
                 data={datalist2.slice(0, itemsToShow1)}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
-                  <TouchableOpacity>
+                  <TouchableOpacity
+                    onPress={() =>
+                      navigation.navigate("screendocbao", {
+                        articleId: item.id,
+                        name: item.name,
+                        content: item.content,
+                        image: item.image,
+                      })
+                    }
+                  >
                     <View
                       style={{
                         height: 105,
@@ -243,16 +266,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  listvideo:{
+  listvideo: {
     flex: 9,
     alignItems: "center",
-
   },
-  fontVideo:{
+  fontVideo: {
     textAlign: "center",
     fontSize: 20,
     fontWeight: "bold",
     color: "#fff",
-    marginTop:15
-  }
+    marginTop: 15,
+  },
 });
