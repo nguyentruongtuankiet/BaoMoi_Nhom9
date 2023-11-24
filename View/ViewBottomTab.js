@@ -11,7 +11,9 @@ import utilities from "../screens/utilities"
 
 const TabBottom = createBottomTabNavigator();
 
-export const TabScreen = () => (
+export const TabScreen = ({navigation, route}) => (
+ 
+  
   <TabBottom.Navigator>
     <TabBottom.Screen
       name="Tin tức"
@@ -70,4 +72,5 @@ export const TabScreen = () => (
       }}
     />
   </TabBottom.Navigator>
+
 );

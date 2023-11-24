@@ -21,7 +21,15 @@ export default function Screen1({ navigation }) {
 var handleLogin = () => {
   const account = data.find((item) => item.username === username && item.password === password);
   if (account) {
-    navigation.navigate("screen3");
+    navigation.navigate("Tin tức", {
+      screen: "Tab8", 
+      params: account,
+    });
+    navigation.navigate("screen3", {
+      userData: account,
+    });
+  
+ 
   } else {
     window.alert("Invalid email or password");
   }
