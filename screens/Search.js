@@ -3,11 +3,12 @@ import { TouchableOpacity, Text, FlatList } from "react-native";
 import { StyleSheet, View, TextInput, ScrollView, Image } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-export default function Search() {
+export default function Search({navigation}) {
   const [originalData, setOriginalData] = useState([]);
   const [datalist, setDataList] = useState([]);
   const data = ["Cho bạn", "Nóng", "Mới", "Tổng hợp", "Bóng Đá VN"];
   const [inputText, setInputText] = useState("");
+
   const [showAll, setShowAll] = useState(false);
   const initialItemsToShow = 3;
   const itemsToShow = showAll ? datalist.length : initialItemsToShow;
@@ -17,15 +18,16 @@ export default function Search() {
       .then((response) => response.json())
       .then((json) => {
         setDataList(json);
-        setOriginalData(json); // Lưu dữ liệu ban đầu vào originalData
+        setOriginalData(json);
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
       });
   }, []);
+
   const handleSearch = () => {
     if (inputText === "") {
-      setDataList(originalData); // Sử dụng dữ liệu gốc khi không có dữ liệu nhập
+      setDataList(originalData);
       return;
     }
     const filteredData = originalData.filter((item) =>
@@ -34,9 +36,36 @@ export default function Search() {
     setDataList(filteredData);
   };
 
-  const handleTextPress = (item) => {
-    setInputText(item);
+  const handleSearchSwift = () => {
+    let filteredData = originalData;
+    let newSearchSwift = "";
+    if (inputText === "Cho bạn") {
+      newSearchSwift = "";
+    } else if (inputText === "Nóng") {
+      newSearchSwift = "nong";
+    } else if (inputText === "Mới") {
+      newSearchSwift = "moi";
+    } else if (inputText === "Tổng hợp") {
+      newSearchSwift = "tonghop";
+    } else if (inputText === "Bóng Đá VN") {
+      newSearchSwift = "sport";
+    }
+  
+    if (newSearchSwift !== "") {
+      filteredData = originalData.filter((item) =>
+        item.type && typeof item.type === 'string' && item.type.toLowerCase().includes(newSearchSwift.toLowerCase())
+      );
+    }
+  
+    setDataList(filteredData);
   };
+
+  const handleTextPress = (item) => {
+    setInputText(item); // Hiển thị chữ trong TextInput khi một mục được chọ // Áp dụng bộ lọc tìm kiếm
+  };
+  useEffect(() => {
+    handleSearchSwift();
+  }, [inputText]);
   return (
     <View style={styles.container}>
       <ScrollView nestedScrollEnabled>
@@ -131,7 +160,9 @@ export default function Search() {
             {data.map((item, index) => (
               <TouchableOpacity
                 key={index}
-                onPress={() => handleTextPress(item)}
+                onPress={() => {
+                  handleTextPress(item);
+                }}
               >
                 <Text
                   key={index}
