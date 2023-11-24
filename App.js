@@ -59,7 +59,7 @@ export default function App() {
           component={screen3cham}
           options={{ headerShown: false }}
         /> */}
-{/* 
+
          <Stack.Screen
           name="user"
           component={user}
@@ -74,7 +74,7 @@ export default function App() {
           name="tienich"
           component={tienich}
           options={{ headerShown: false }}
-        /> */}
+        />
         <Stack.Screen
           name="screendocbao"
           component={screendocbao}
