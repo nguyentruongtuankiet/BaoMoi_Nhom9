@@ -21,13 +21,6 @@
       "id": "3",
       "img": "https://example.com/newuser.jpg",
       "username": "thuylinh"
-    },
-    {
-      "id": "4",
-      "email": "huong@gmail.com",
-      "password": "456",
-      "username": "ngochuong",
-      "img": ""
     }
   ],
   "articles": [

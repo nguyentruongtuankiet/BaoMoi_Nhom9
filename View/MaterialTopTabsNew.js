@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { LinearGradient } from "expo-linear-gradient";
 import Icon from "react-native-vector-icons/FontAwesome"; //
-import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
+import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
 import Screen3 from "../screens/Screen3";
 import {
   StyleSheet,
@@ -13,44 +13,92 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 
-import screentimkiem from "../screens/Search"
+import screentimkiem from "../screens/Search";
 import Search from "../screens/Search";
 import user from "../screens/User";
 const MaterialTopTabs = createMaterialTopTabNavigator();
 
-import screen3cham from "../screens/BaCham"
-
+import screen3cham from "../screens/BaCham";
 
 // ... (your imports)
 
 export const MaterialTopTabsScreenNews = ({ navigation, route }) => {
   const userData = route.params;
-  console.log("dữ liệu"+ userData)
+  console.log("dữ liệu" + userData);
   const getTabBarGradientColors = () => {
     return ["#54acb5", "#1a698b"];
   };
 
   const renderTabBarButton = ({ route, state, navigation }) => {
-    const focusedRoute = getFocusedRouteNameFromRoute(route) || "";
-    const isFocused = focusedRoute === route.name;
-    const iconColor = isFocused ? "#gray" : "#fff";
-
+    // const focusedRoute = getFocusedRouteNameFromRoute(route) || "";
+    const isFocused = state.routes[state.index].name === route.name;
+    const iconColor = isFocused ? "#b6b2ba" : "#fff";
+    // const highlightColor = isFocused ? "#fff" : "transparent";
+    const underlineColor = isFocused ? "#fff" : "transparent";
     const renderLabel = () => {
       switch (route.name) {
         case "Tab1":
           return <Icon name="list-ul" color={iconColor} size={25} />;
         case "Tab2":
-          return "Cho bạn";
+          return <Text  style={{
+            textDecorationLine: "underline",
+            textDecorationColor: underlineColor,
+            lineHeight: 20,
+       
+           
+           
+          }}>Cho bạn</Text>;
         case "Tab3":
-          return "Nóng";
+          return (
+            <Text
+              style={{
+                textDecorationLine: "underline",
+                textDecorationColor: underlineColor,
+             
+              }}
+            >
+              Nóng
+            </Text>
+          );
         case "Tab4":
-          return "Mới";
+          return (
+            <Text
+              style={{
+                textDecorationLine: "underline",
+                textDecorationColor: underlineColor,
+              
+              }}
+            >
+              Mới
+            </Text>
+          );
         case "Tab5":
-          return "Tổng hợp";
+          return (
+            <Text
+              style={{
+                textDecorationLine: "underline",
+                textDecorationColor: underlineColor,
+             
+              }}
+            >
+              Tổng hợp
+            </Text>
+          );
         case "Tab6":
-          return "Bóng đá VN";
+          return (
+            <Text
+              style={{
+                textDecorationLine: "underline",
+                textDecorationColor: underlineColor,
+              
+              }}
+            >
+              Bóng đá VN
+            </Text>
+          );
         case "Tab7":
           return <Icon name="search" color={iconColor} size={25} />;
         case "Tab8":
@@ -86,10 +134,11 @@ export const MaterialTopTabsScreenNews = ({ navigation, route }) => {
 
   return (
     <MaterialTopTabs.Navigator
+    initialRouteName="Tab2"
       tabBarOptions={{
         scrollEnabled: true,
         tabStyle: {
-          flex: 1,
+         
           justifyContent: "space-evenly",
           alignItems: "center",
           width: "auto",
@@ -97,9 +146,10 @@ export const MaterialTopTabsScreenNews = ({ navigation, route }) => {
         },
       }}
       tabBar={(props) => (
-        <LinearGradient
-        start={{ x: 0, y: 0 }} // Left
-        end={{ x: 1, y: 0 }}   // Right
+       
+             <LinearGradient
+          start={{ x: 0, y: 0 }} // Left
+          end={{ x: 1, y: 0 }} // Right
           colors={getTabBarGradientColors()}
           style={{
             flexDirection: "row",
@@ -109,9 +159,15 @@ export const MaterialTopTabsScreenNews = ({ navigation, route }) => {
           }}
         >
           {props.state.routes.map((route) =>
-            renderTabBarButton({ route, state: props.state, navigation: props.navigation })
+            renderTabBarButton({
+              route,
+              state: props.state,
+              navigation: props.navigation,
+            })
           )}
         </LinearGradient>
+      
+     
       )}
     >
       <MaterialTopTabs.Screen
@@ -128,7 +184,7 @@ export const MaterialTopTabsScreenNews = ({ navigation, route }) => {
         options={{
           tabBarLabel: "Cho bạn",
           tabBarLabelStyle: {
-            width: 51,
+            width: 100,
             textTransform: "none",
             fontSize: 13,
             fontWeight: "bold",
@@ -187,7 +243,7 @@ export const MaterialTopTabsScreenNews = ({ navigation, route }) => {
             textTransform: "none",
             fontSize: 13,
             fontWeight: "bold",
-            width: 51,
+            width: 100,
           },
         }}
       />
@@ -205,9 +261,8 @@ export const MaterialTopTabsScreenNews = ({ navigation, route }) => {
           tabBarShowLabel: false,
         }}
       />
+      
     </MaterialTopTabs.Navigator>
   );
 };
 
-
-  
