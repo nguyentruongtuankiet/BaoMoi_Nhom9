@@ -41,14 +41,21 @@ export default function DocBao({ route, navigation }) {
 
   return (
     <View style={styles.container}>
-      <View style = {{padding: 15, marginBottom: 10}}>
+      <View style = {{marginLeft: 10, marginBottom:-10, flexDirection: "row", justifyContent:"space-between", alignItems:
+      "center"}}>
+      <TouchableOpacity
+          onPress={() => navigation.navigate("screen3")}
+        
+        
+      >
+         <Image source={require("../images/logobaomoi.png")}
+        style = {{height: 100, width: 100, }}
+        resizeMode="contain"
+        ></Image>
+      </TouchableOpacity>
+       
         <TouchableOpacity onPress={() => navigation.navigate("screen3")}>
-          <AntDesign
-            name="arrowleft"
-            size={24}
-            color="black"
-            style={{ position: "absolute", top: 2, left: 5 }}
-          />
+            <Text style = {{fontSize: 20, fontWeight: "600"}}>Trở lại  </Text>
         </TouchableOpacity>
       </View>
      
@@ -98,13 +105,16 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: "bold",
     marginLeft: 10,
+    textAlign:"left",
+    marginBottom: 8,
   },
   content: {
     fontSize: 16,
     marginBottom: 8,
+
   },
   image: {
     width: "100%",
