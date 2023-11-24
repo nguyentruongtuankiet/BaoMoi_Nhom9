@@ -24,7 +24,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Screen1">
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Screen1"
           component={Screen1}
           options={{ headerShown: false }}
@@ -35,7 +35,7 @@ export default function App() {
           name="screen2"
           component={Screen2}
           options={{ headerShown: false }}
-        /> */}
+        />
         <Stack.Screen
 
           name="screen3"
@@ -59,7 +59,7 @@ export default function App() {
           component={screen3cham}
           options={{ headerShown: false }}
         /> */}
-{/* 
+
          <Stack.Screen
           name="user"
           component={user}
@@ -74,7 +74,7 @@ export default function App() {
           name="tienich"
           component={tienich}
           options={{ headerShown: false }}
-        /> */}
+        />
         <Stack.Screen
           name="screendocbao"
           component={screendocbao}

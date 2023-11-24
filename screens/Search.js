@@ -92,6 +92,7 @@ export default function Search() {
           placeholder="Search"
           placeholderTextColor="#666"
           value={inputText}
+          onChangeText={(text) => setInputText(text)}
         />
         <TouchableOpacity>
           <Text

@@ -25,7 +25,9 @@ import screen3cham from "../screens/BaCham"
 
 // ... (your imports)
 
-export const MaterialTopTabsScreenNews = ({ navigation }) => {
+export const MaterialTopTabsScreenNews = ({ navigation, route }) => {
+  const userData = route.params;
+  console.log("dữ liệu"+ userData)
   const getTabBarGradientColors = () => {
     return ["#54acb5", "#1a698b"];
   };

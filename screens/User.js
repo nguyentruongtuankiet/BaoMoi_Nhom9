@@ -3,7 +3,10 @@ import { Image } from "expo-image";
 import { StyleSheet, Text, View, Pressable, TouchableOpacity } from "react-native";
 // import { Color, FontFamily, FontSize } from "..fonts/GlobalStyles";
 
-const User = ({navigation}) => {
+const User = ({navigation, route}) => {
+  const user = route.params;
+  console.log("truyen data"+user);
+  
   return (
     <View style={[styles.user, styles.userLayout]}>
       <Image

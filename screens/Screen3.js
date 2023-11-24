@@ -11,6 +11,8 @@ import React, { useState, useEffect } from "react";
 import { FlatList } from "react-native";
 
 export default function Screen3({ route, navigation }) {
+  const userData = route.params;
+  console.log("dữ liệu" + userData);
   const [data, setData] = useState([]);
   const tabName = route.params?.tabName ?? "";
   console.log(tabName);
