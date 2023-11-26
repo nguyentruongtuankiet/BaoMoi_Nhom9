@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   StyleSheet,
   View,
@@ -75,8 +75,8 @@ export default function Screen4() {
         </LinearGradient>
       </View>
 
-      <View style={styles.listvideo}>
-        <ScrollView nestedScrollEnabled={true}>
+      <ScrollView>
+        <View style={{ width: "100%", alignItems: "center", height: "auto" }}>
           <FlatList
             data={data}
             keyExtractor={(item) => item.link}
@@ -86,11 +86,12 @@ export default function Screen4() {
                   ref={videoRefs[item.link]}
                   source={require(`../video/${item.link}`)}
                   style={styles.video}
-                  resizeMode="contain"
+                  resizeMode="cover" // hoặc "contain", tùy thuộc vào cách bạn muốn hiển thị
                   shouldPlay={false}
                   isLooping={false}
-                  useNativeControls
+                  useNativeControls={true}
                 />
+
                 <TouchableOpacity
                   onPress={() => playPauseVideo(item.link)}
                   style={styles.playPauseButton}
@@ -110,8 +111,8 @@ export default function Screen4() {
               </View>
             )}
           />
-        </ScrollView>
-      </View>
+        </View>
+      </ScrollView>
     </View>
   );
 }
@@ -128,12 +129,8 @@ const styles = StyleSheet.create({
   },
   header: {
     height: screenHeight * 0.1,
-    backgroundImage: "linear-gradient(to right, #5eb4ba, #155380)",
     alignItems: "center",
     justifyContent: "center",
-  },
-  listvideo: {
-    flex: 1,
   },
   fontVideo: {
     fontSize: 20,
@@ -141,20 +138,21 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
   videoContainer: {
-    flex: 1,
     alignItems: "center",
-    justifyContent: "flex-start",
-
     marginBottom: 50,
+    width: 380,
+    marginTop: 3,
   },
   video: {
-    width: screenWidth,
-    height: screenHeight * 0.4,
+    // resizeMode: "vertical",
+    width: "100%",
+    height: screenHeight * 0.35,
     backgroundColor: "transparent",
+    borderRadius: 10,
   },
   playPauseButton: {
     position: "absolute",
-    top: "50%",
+    top: 120,
     left: "50%",
     zIndex: 1,
     transform: [{ translateX: -25 }, { translateY: -25 }],
